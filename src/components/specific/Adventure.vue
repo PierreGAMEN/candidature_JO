@@ -5,15 +5,15 @@ import SectionPart from "../sectionPart.vue"
 </script>
 
 <template>
-    <SectionPart title="Bâtir ensemble cette aventure, depuis les Alpes"
-        altImage="Logo JO">
+    <SectionPart title="Construire ensemble un projet qui fait sens, au cœur des Alpes" altImage="Logo JO">
         <template #default>
             <div class="adventure-content">
                 <p class="intro-text">
-                    Préparer une nouvelle étape de vie professionnelle, ce n'est pas
-                    simplement chercher un poste. <strong>C'est vouloir prendre part à un projet qui
-                        a du sens</strong>, au cœur d'un territoire que je connais et que je porte en moi
-                    depuis toujours : <em>les Alpes</em>.
+                    Changer de cap professionnel, c’est bien plus que chercher un poste : c’est choisir de s’impliquer
+                    dans <strong>une aventure collective qui porte des valeurs fortes et un impact concret.</strong>
+                    Pour moi, ces Jeux
+                    ne sont pas un simple événement : ils représentent une opportunité unique de contribuer à l’avenir
+                    de mon territoire, <em>les Alpes</em>, que je connais, aime et respecte profondément.
                 </p>
 
                 <div class="motivation-section">
@@ -23,27 +23,37 @@ import SectionPart from "../sectionPart.vue"
                         <div class="reason-item">
                             <span class="icon">🏔️</span>
                             <div class="content">
-                                <h4>Un territoire d'exception</h4>
-                                <p>Les Alpes françaises, terre d'innovation et d'excellence sportive, méritent un
-                                    événement à leur hauteur.</p>
+                                <h4>🏔️ Un engagement ancré dans mon territoire</h4>
+                                <p>Né et élevé dans les Alpes, j’ai grandi en pratiquant le trail, l’escalade, le ski —
+                                    autant d’activités qui m’ont appris la persévérance, la préparation, le respect de
+                                    la nature. Ce territoire est un écosystème fragile, un laboratoire d’innovation
+                                    durable. Participer à ces Jeux, c’est s’engager à construire une expérience sportive
+                                    et humaine exemplaire, ancrée localement et pensée pour l’avenir.</p>
                             </div>
                         </div>
 
                         <div class="reason-item">
                             <span class="icon">🤝</span>
                             <div class="content">
-                                <h4>Un projet fédérateur</h4>
-                                <p>Rassembler acteurs publics, privés et citoyens autour d'un objectif commun et
-                                    ambitieux.</p>
+                                <h4>🤝 Un savoir-faire issu du terrain et du collectif</h4>
+                                <p>Huit années dans le retail sportif chez Decathlon m’ont enseigné la rigueur
+                                    opérationnelle, la gestion d’équipes, la conduite de projets complexes. Manager puis
+                                    développeur, j’ai appris à structurer, coordonner et fédérer. Ce sont ces
+                                    compétences, conjuguées à mon goût pour l’innovation, que je souhaite mettre au
+                                    service des Jeux. Je sais qu’une aventure comme celle-ci ne réussit que par
+                                    l’intelligence collective, la fiabilité et la clarté dans les rôles.</p>
                             </div>
                         </div>
 
                         <div class="reason-item">
                             <span class="icon">🌱</span>
                             <div class="content">
-                                <h4>Un héritage durable</h4>
-                                <p>Créer des infrastructures et des dynamiques qui bénéficieront aux générations
-                                    futures.</p>
+                                <h4>🌱 Une vision partagée avec l’organisation 2030</h4>
+                                <p>JSobriété, inclusion, ancrage local, durabilité : ce ne sont pas des mots, mais des
+                                    principes concrets qui orientent chaque décision. Je souhaite m’impliquer dans un
+                                    projet qui agit, avec humilité et responsabilité, pour minimiser son impact et
+                                    maximiser son héritage. Mon objectif est d’apporter une contribution pragmatique,
+                                    sur le long terme.</p>
                             </div>
                         </div>
                     </div>
