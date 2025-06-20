@@ -10,22 +10,16 @@ import SectionPart from "../sectionPart.vue"
             <div class="contact-content">
                 <div class="intro-text">
                     <p class="main-message">
-                        Je suis convaincu que la réussite de ce projet passe par une vraie complémentarité entre tous
-                        ses acteurs — une démarche à laquelle je veux contribuer pleinement, avec loyauté, énergie et
-                        pragmatisme.
-
-                        Si vous cherchez un partenaire fiable, engagé et agile, je serais ravi d’échanger avec vous.
+                        Je suis convaincu que la réussite passera par des femmes et des hommes engagés, fiables et
+                        agiles.
+                        Si vous cherchez un partenaire qui conjugue expérience, valeurs et esprit d’équipe : je suis là.
+                        Ancré dans mes montagnes, tourné vers l’avenir.
+                        Prêt à contribuer pleinement à cette aventure.
                     </p>
                 </div>
 
                 <div class="call-to-action">
-                    <div class="highlight-box">
-                        <p class="statement">
-                            <span class="emphasis">Je suis là.</span><br>
-                            Ancré dans mes montagnes, tourné vers l'avenir.<br>
-                            <strong>Prêt à avancer à vos côtés.</strong>
-                        </p>
-                    </div>
+
 
                     <div class="action-section">
                         <h4 class="action-title">👥 Contactez-moi. Échangeons. Construisons.</h4>
@@ -68,316 +62,234 @@ import SectionPart from "../sectionPart.vue"
 @use '@/styles/variables' as *;
 
 .contact-content {
-    width: 100%;
-    max-width: 800px;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: clamp(2rem, 4vw, 3rem);
+    gap: clamp(2.5rem, 5vw, 4rem);
 }
 
 .intro-text {
-    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-    line-height: 1.8;
-    color: #2d3748;
-    margin-bottom: var(--spacing-lg);
-    font-weight: 400;
-    letter-spacing: 0.01em;
-
-    strong {
-      color: $primary-color;
-      font-weight: 600;
-      background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
-      padding: 0.1em 0.2em;
-      border-radius: 4px;
-    }
-
-    em {
-      color: $primary-color;
-      font-style: normal;
-      font-weight: 600;
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 20%));
-        border-radius: 1px;
-      }
-    }
-  
+    text-align: center;
 
     .main-message {
-        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-        line-height: 1.7;
-        color: #333;
+        font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+        line-height: 1.8;
+        color: #2c3e50;
         margin: 0;
-        text-align: justify;
-
-        strong {
-            color: $primary-color;
-            font-weight: 700;
-        }
-
-        em {
-            color: rgba($primary-color, 0.8);
-            font-style: italic;
-            font-weight: 500;
-        }
+        margin: 0 auto;
+        font-weight: 400;
+        letter-spacing: 0.01em;
     }
 }
 
 .call-to-action {
     display: flex;
     flex-direction: column;
-    gap: clamp(1.5rem, 3vw, 2rem);
-}
-
-.highlight-box {
-    padding: clamp(1.5rem, 3vw, 2rem);
-    background: linear-gradient(135deg,
-            rgba($primary-color, 0.08) 0%,
-            rgba($primary-color, 0.03) 100%);
-    border-radius: 16px;
-    border: 2px solid rgba($primary-color, 0.15);
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg,
-                transparent 0%,
-                rgba($primary-color, 0.02) 50%,
-                transparent 100%);
-        animation: shimmer 3s ease-in-out infinite;
-    }
-
-    .statement {
-        margin: 0;
-        font-size: clamp(1.2rem, 2.8vw, 1.5rem);
-        line-height: 1.6;
-        text-align: center;
-        color: #333;
-
-        .emphasis {
-            font-size: 1.2em;
-            font-weight: 700;
-            color: $primary-color;
-            display: inline-block;
-            margin-bottom: 0.25rem;
-        }
-
-        strong {
-            color: $primary-color;
-            font-weight: 600;
-        }
-    }
+    align-items: center;
+    gap: clamp(2rem, 4vw, 3rem);
 }
 
 .action-section {
+    text-align: center;
+    width: 100%;
+
     .action-title {
-        font-size: clamp(1.2rem, 2.6vw, 1.4rem);
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
         font-weight: 600;
-        color: #555;
-        margin: 0 0 1.5rem 0;
-        text-align: center;
+        color: #2c3e50;
+        margin: 0 0 clamp(2rem, 3vw, 2.5rem) 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: $primary-color;
+            border-radius: 2px;
+        }
     }
 }
 
 .contact-buttons {
     display: flex;
     flex-direction: column;
-    gap: clamp(1.5rem, 3vw, 2rem);
     align-items: center;
+    gap: clamp(2rem, 3vw, 2.5rem);
+    width: 100%;
 }
 
 .btn-primary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
-    padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2rem, 4vw, 2.5rem);
-    background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+    padding: clamp(1rem, 2.2vw, 1.2rem) clamp(2rem, 4vw, 2.8rem);
+    background: $primary-color;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: clamp(1.1rem, 2.2vw, 1.25rem);
-    box-shadow:
-        0 4px 20px rgba($primary-color, 0.3),
-        0 2px 8px rgba($primary-color, 0.2);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    box-shadow: 0 2px 8px rgba($primary-color, 0.2);
+    transition: all 0.2s ease;
     position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg,
-                transparent 0%,
-                rgba(255, 255, 255, 0.2) 50%,
-                transparent 100%);
-        transition: left 0.6s ease;
-    }
+    border: 2px solid $primary-color;
 
     &:hover {
-        transform: translateY(-2px) scale(1.02);
-        box-shadow:
-            0 8px 30px rgba($primary-color, 0.4),
-            0 4px 12px rgba($primary-color, 0.3);
-
-        &::before {
-            left: 100%;
-        }
+        background: white;
+        color: $primary-color;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba($primary-color, 0.25);
     }
 
     &:active {
-        transform: translateY(0) scale(0.98);
+        transform: translateY(0);
     }
 
     .btn-icon {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .btn-text {
-        white-space: nowrap;
+        font-weight: 600;
+        letter-spacing: 0.01em;
     }
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .info-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba($primary-color, 0.1);
-    transition: all 0.3s ease;
+    padding: 1rem 1.25rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.8);
-        border-color: rgba($primary-color, 0.2);
-        transform: translateX(4px);
+        border-color: rgba($primary-color, 0.3);
+        box-shadow: 0 2px 8px rgba($primary-color, 0.1);
     }
 
     .info-icon {
-        font-size: 1.2rem;
-        width: 24px;
+        font-size: 1.1rem;
+        width: 20px;
         text-align: center;
         flex-shrink: 0;
+        color: #64748b;
     }
 
     .info-text {
-        font-size: clamp(0.9rem, 2vw, 1rem);
-        color: #555;
+        font-size: clamp(0.9rem, 1.8vw, 1rem);
+        color: #475569;
         font-weight: 500;
     }
 }
 
 .closing-message {
-    margin-top: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    margin-top: clamp(1rem, 2vw, 2rem);
 
     .vision-text {
-        font-size: clamp(1rem, 2.2vw, 1.2rem);
-        line-height: 1.6;
-        text-align: center;
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        line-height: 1.7;
         margin: 0;
-        padding: clamp(1rem, 2.5vw, 1.5rem);
-        background: linear-gradient(135deg,
-                rgba($primary-color, 0.05) 0%,
-                rgba($primary-color, 0.02) 100%);
+        padding: clamp(1.5rem, 3vw, 2rem);
+        background: #f8fafc;
         border-radius: 12px;
-        border-left: 4px solid rgba($primary-color, 0.3);
+        border-left: 4px solid $primary-color;
+        max-width: 700px;
+        margin: 0 auto;
 
         em {
-            color: #666;
+            color: #64748b;
             font-style: italic;
             font-weight: 500;
         }
     }
 }
 
-// Animation shimmer
-@keyframes shimmer {
-
-    0%,
-    100% {
-        transform: translateX(-100%);
+// Animations d'entrée
+@keyframes fadeInUp {
+    from {
         opacity: 0;
+        transform: translateY(20px);
     }
 
-    50% {
-        transform: translateX(0);
+    to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-// Responsive
+.intro-text {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.action-section {
+    animation: fadeInUp 0.6s ease-out 0.1s;
+    animation-fill-mode: both;
+}
+
+.contact-info {
+    animation: fadeInUp 0.6s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+.closing-message {
+    animation: fadeInUp 0.6s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+// Responsive Design
 @media (max-width: 768px) {
     .contact-content {
-        gap: 1.5rem;
-    }
-
-    .highlight-box {
-        padding: 1.5rem;
-
-        .statement {
-            text-align: left;
-        }
+        gap: 2rem;
     }
 
     .contact-info {
+        grid-template-columns: 1fr;
         max-width: 100%;
     }
 
     .info-item {
-        padding: 1rem;
-
-        &:hover {
-            transform: none;
-        }
+        justify-content: center;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .btn-primary {
         width: 100%;
-        justify-content: center;
-
-        .btn-text {
-            white-space: normal;
-            text-align: center;
-        }
+        max-width: 320px;
     }
 
     .info-item {
         flex-direction: column;
-        text-align: center;
         gap: 0.5rem;
+        padding: 1.25rem;
 
         .info-icon {
             width: auto;
+        }
+    }
+
+    .action-section .action-title {
+        &::after {
+            width: 40px;
         }
     }
 }

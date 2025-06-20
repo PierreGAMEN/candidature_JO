@@ -233,7 +233,7 @@ onMounted(() => {
 
     @media (max-width: 480px) {
         .section-wrapper {
-            padding: 1.5rem 0.5rem;
+            padding: 1.5rem 1rem;
         }
 
         .content-wrapper {

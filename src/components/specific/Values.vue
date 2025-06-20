@@ -20,10 +20,8 @@ import SectionPart from '../sectionPart.vue';
                             <div class="content">
                                 <h4>Approche pragmatique</h4>
                                 <p>
-                                    Je transforme des objectifs ambitieux en actions concrètes, mesurables et efficaces.
-                                    Grâce à mon expérience terrain et mes compétences techniques, je fais avancer les
-                                    projets
-                                    avec rigueur et résultats.
+                                    Je transforme des ambitions en actions mesurables et efficaces, en m’appuyant sur
+                                    mon expérience terrain et mes compétences numériques.
                                 </p>
                             </div>
                         </div>
@@ -33,10 +31,8 @@ import SectionPart from '../sectionPart.vue';
                             <div class="content">
                                 <h4>Capacité à fédérer</h4>
                                 <p>
-                                    Manager et développeur, j’accompagne aussi bien des équipes humaines que des projets
-                                    digitaux.
-                                    Je crée des synergies solides basées sur la confiance, l’écoute et la coopération
-                                    active.
+                                    Manager comme développeur, je sais fédérer des équipes autour d’un cap clair, dans
+                                    un esprit de confiance et d’engagement.
                                 </p>
                             </div>
                         </div>
@@ -46,22 +42,19 @@ import SectionPart from '../sectionPart.vue';
                             <div class="content">
                                 <h4>Adaptabilité</h4>
                                 <p>
-                                    Entre la montagne et le code, j’évolue dans des environnements exigeants et
-                                    changeants avec curiosité et souplesse.
-                                    Je m’adapte rapidement tout en gardant le cap sur nos ambitions.
+                                    Je m’épanouis dans des environnements exigeants, changeants — en montagne comme dans
+                                    le digital — avec rigueur et curiosité.
                                 </p>
                             </div>
                         </div>
 
                         <div class="reason-item">
-                            <div class="card-icon">🏔️</div>
+                            <div class="card-icon">📊</div>
                             <div class="content">
-                                <h4>Engagement local</h4>
+                                <h4>Analyse et prise de recul</h4>
                                 <p>
-                                    Né et élevé dans les Alpes, je connais profondément ce territoire. Je suis engagé à
-                                    valoriser ses richesses,
-                                    à préserver son équilibre, et à faire vivre un projet en harmonie avec son
-                                    environnement.
+                                    Je sais prendre de la hauteur, lire les signaux clés et décider vite et bien, même
+                                    dans l’urgence. Ma force : allier données, écoute et instinct terrain.
                                 </p>
                             </div>
                         </div>
@@ -69,11 +62,10 @@ import SectionPart from '../sectionPart.vue';
                         <div class="reason-item">
                             <div class="card-icon">🚀</div>
                             <div class="content">
-                                <h4>Vision globale et durable</h4>
+                                <h4>Vision durable</h4>
                                 <p>
-                                    Au-delà de mon ancrage local, je porte une vision tournée vers des solutions
-                                    durables et innovantes,
-                                    capables d’inspirer et d’impacter positivement à l’échelle internationale.
+                                    Je crois en une innovation sobre, utile et inclusive, capable d’avoir un impact
+                                    positif à long terme pour nos territoires.
                                 </p>
                             </div>
                         </div>

@@ -23,8 +23,8 @@ import SectionPart from '../sectionPart.vue';
             <div class="timeline-content">
               <h3>8 ans chez Decathlon</h3>
               <p>
-                Responsable d'équipes, pilote opérationnel et formateur, j’y ai développé le sens du collectif,
-                la capacité à m'adapter à des environnements exigeants, et une approche concrète du terrain.
+                Manager d’équipe, pilote opérationnel, formateur… j’y ai développé le sens du collectif, l’adaptabilité
+                et la culture de l’action..
               </p>
             </div>
           </div>
@@ -34,9 +34,8 @@ import SectionPart from '../sectionPart.vue';
             <div class="timeline-content">
               <h3>Développeur web</h3>
               <p>
-                En reconversion, j’ai acquis de nouvelles compétences techniques pour concevoir
-                et maintenir des solutions numériques utiles, en gardant toujours à l’esprit les utilisateurs,
-                la fiabilité et la sobriété de ce que je construis.
+                Aujourd’hui, je conçois et maintiens des solutions numériques pensées pour les utilisateurs, fiables et
+                responsables.
               </p>
             </div>
           </div>
@@ -45,10 +44,9 @@ import SectionPart from '../sectionPart.vue';
         <div class="motivation">
           <h3>Pourquoi moi, maintenant ?</h3>
           <p>
-            Les Jeux de 2030 représenteront un défi collectif, à la croisée de l’humain, du numérique et de
-            l’environnement. Je souhaite y apporter ma double expérience – terrain et technique – et mon
-            attachement profond à ce territoire. Avec pragmatisme, curiosité et esprit d’équipe, je veux
-            contribuer, à ma mesure, à un projet porteur de sens et tourné vers l’avenir.
+            Les Jeux 2030 sont un défi à la croisée de l’humain, du numérique et de l’environnement. J’y vois l’occasion
+            d’apporter ma double compétence, ma connaissance du territoire, et mon énergie collective pour construire,
+            ensemble, un événement exemplaire et porteur de sens.
           </p>
         </div>
       </div>

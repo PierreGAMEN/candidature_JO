@@ -23,12 +23,11 @@ import SectionPart from "../sectionPart.vue"
                         <div class="reason-item">
                             <span class="icon">🏔️</span>
                             <div class="content">
-                                <h4>Un engagement ancré dans mon territoire</h4>
-                                <p>Né et élevé dans les Alpes, j’ai grandi en pratiquant le trail, l’escalade, le ski —
-                                    autant d’activités qui m’ont appris la persévérance, la préparation, le respect de
-                                    la nature. Ce territoire est un écosystème fragile, un laboratoire d’innovation
-                                    durable. Participer à ces Jeux, c’est s’engager à construire une expérience sportive
-                                    et humaine exemplaire, ancrée localement et pensée pour l’avenir.</p>
+                                <h4>Un engagement local, naturel et sincère</h4>
+                                <p>Né et élevé dans les Alpes, j’y ai forgé ma persévérance à travers le trail,
+                                    l’escalade ou le ski. Ce territoire m’a construit, et je souhaite aujourd’hui lui
+                                    rendre en contribuant à une organisation respectueuse de son environnement, tournée
+                                    vers l’avenir.</p>
                             </div>
                         </div>
 
@@ -36,12 +35,10 @@ import SectionPart from "../sectionPart.vue"
                             <span class="icon">🤝</span>
                             <div class="content">
                                 <h4>Un savoir-faire issu du terrain et du collectif</h4>
-                                <p>Huit années dans le retail sportif chez Decathlon m’ont enseigné la rigueur
-                                    opérationnelle, la gestion d’équipes, la conduite de projets complexes. Manager puis
-                                    développeur, j’ai appris à structurer, coordonner et fédérer. Ce sont ces
-                                    compétences, conjuguées à mon goût pour l’innovation, que je souhaite mettre au
-                                    service des Jeux. Je sais qu’une aventure comme celle-ci ne réussit que par
-                                    l’intelligence collective, la fiabilité et la clarté dans les rôles.</p>
+                                <p>Huit années chez Decathlon m’ont formé à la gestion d’équipe, la rigueur
+                                    opérationnelle, et la coordination de projets. Reconverti en développeur web,
+                                    j’apporte aujourd’hui cette double compétence humaine et technique, avec toujours la
+                                    même conviction : la réussite vient de l’intelligence collective.</p>
                             </div>
                         </div>
 
@@ -49,11 +46,9 @@ import SectionPart from "../sectionPart.vue"
                             <span class="icon">🌱</span>
                             <div class="content">
                                 <h4>Une vision partagée avec l’organisation 2030</h4>
-                                <p>JSobriété, inclusion, ancrage local, durabilité : ce ne sont pas des mots, mais des
-                                    principes concrets qui orientent chaque décision. Je souhaite m’impliquer dans un
-                                    projet qui agit, avec humilité et responsabilité, pour minimiser son impact et
-                                    maximiser son héritage. Mon objectif est d’apporter une contribution pragmatique,
-                                    sur le long terme.</p>
+                                <p>Sobriété, inclusion, durabilité : ce sont des principes que je partage et que
+                                    j’applique au quotidien. Mon objectif est de contribuer à des solutions concrètes,
+                                    utiles et responsables, pour maximiser l’héritage de ces Jeux.</p>
                             </div>
                         </div>
                     </div>
