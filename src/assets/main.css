@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #424242;
+}
+
