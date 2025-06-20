@@ -23,7 +23,7 @@ import SectionPart from "../sectionPart.vue"
                         <div class="reason-item">
                             <span class="icon">🏔️</span>
                             <div class="content">
-                                <h4>🏔️ Un engagement ancré dans mon territoire</h4>
+                                <h4>Un engagement ancré dans mon territoire</h4>
                                 <p>Né et élevé dans les Alpes, j’ai grandi en pratiquant le trail, l’escalade, le ski —
                                     autant d’activités qui m’ont appris la persévérance, la préparation, le respect de
                                     la nature. Ce territoire est un écosystème fragile, un laboratoire d’innovation
@@ -35,7 +35,7 @@ import SectionPart from "../sectionPart.vue"
                         <div class="reason-item">
                             <span class="icon">🤝</span>
                             <div class="content">
-                                <h4>🤝 Un savoir-faire issu du terrain et du collectif</h4>
+                                <h4>Un savoir-faire issu du terrain et du collectif</h4>
                                 <p>Huit années dans le retail sportif chez Decathlon m’ont enseigné la rigueur
                                     opérationnelle, la gestion d’équipes, la conduite de projets complexes. Manager puis
                                     développeur, j’ai appris à structurer, coordonner et fédérer. Ce sont ces
@@ -48,7 +48,7 @@ import SectionPart from "../sectionPart.vue"
                         <div class="reason-item">
                             <span class="icon">🌱</span>
                             <div class="content">
-                                <h4>🌱 Une vision partagée avec l’organisation 2030</h4>
+                                <h4>Une vision partagée avec l’organisation 2030</h4>
                                 <p>JSobriété, inclusion, ancrage local, durabilité : ce ne sont pas des mots, mais des
                                     principes concrets qui orientent chaque décision. Je souhaite m’impliquer dans un
                                     projet qui agit, avec humilité et responsabilité, pour minimiser son impact et

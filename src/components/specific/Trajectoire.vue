@@ -1,320 +1,346 @@
 <script setup lang="ts">
-import SectionPart from "../sectionPart.vue";
+import SectionPart from '../sectionPart.vue';
+
+
 </script>
 <template>
-  <SectionPart title="Une trajectoire alpine, une énergie collective">
+  <SectionPart title="Une évolution guidée par le sens et l’action">
     <template #default>
-      <div class="trajectoire-content">
-        <div class="story-block">
-          <div class="story-icon">🏔️</div>
-          <p class="story-text">
-            <strong>Né dans les Alpes</strong>, j'ai grandi entre lacs et
-            sommets, au rythme des saisons et des efforts. J'ai appris tôt que
-            l'engagement et la persévérance ne s'enseignent pas seulement en
-            salle de classe —
-            <em
-              >ils se forgent sur un sentier, dans un mur d'escalade, ou au cœur
-              d'une équipe</em
-            >.
+      <div class="trajectory-content">
+        <div class="intro">
+          <p class="intro-text">
+            Issu du terrain, je me suis formé pour mieux répondre aux enjeux d’aujourd’hui : <strong>accompagner,
+              innover, et
+              construire des projets à impact</strong>. Chaque étape de mon parcours m’a rapproché de cette envie de
+            contribuer,
+            concrètement, à des initiatives qui ont du sens.
           </p>
         </div>
 
-        <div class="story-block">
-          <div class="story-icon">🚀</div>
-          <p class="story-text">
-            Après un bac sport-études en montagne, j'ai consacré
-            <strong>plus de 8 ans au retail sportif chez Decathlon</strong>.
-            Responsable d'équipes, formateur, pilote de projets — j'ai appris à
-            écouter, à décider, à fédérer. Ces années m'ont forgé une vision :
-            <em>l'excellence naît de la collaboration</em>.
-          </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>8 ans chez Decathlon</h3>
+              <p>
+                Responsable d'équipes, pilote opérationnel et formateur, j’y ai développé le sens du collectif,
+                la capacité à m'adapter à des environnements exigeants, et une approche concrète du terrain.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Développeur web</h3>
+              <p>
+                En reconversion, j’ai acquis de nouvelles compétences techniques pour concevoir
+                et maintenir des solutions numériques utiles, en gardant toujours à l’esprit les utilisateurs,
+                la fiabilité et la sobriété de ce que je construis.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="story-block">
-          <div class="story-icon">💻</div>
-          <p class="story-text">
-            Puis un jour, j'ai choisi de
-            <strong>réapprendre, de changer de voie, de coder</strong>. Cette
-            reconversion n'était pas une fuite, mais une nouvelle montagne à
-            gravir. Car derrière chaque ligne de code, il y a une histoire
-            humaine à raconter.
-          </p>
-        </div>
-
-        <div class="story-block highlight">
-          <div class="story-icon">⭐</div>
-          <p class="story-text">
-            <strong
-              >Aujourd'hui, je suis développeur, porteur de sens,
-              leader.</strong
-            ><br />
-            <span class="emphasis"
-              >Aujourd'hui, je veux construire pour demain.</span
-            ><br />
-            <span class="vision"
-              >Les Jeux de 2030 représentent cette ambition : transformer les
-              défis en opportunités, les rêves en réalités partagées.</span
-            >
+        <div class="motivation">
+          <h3>Pourquoi moi, maintenant ?</h3>
+          <p>
+            Les Jeux de 2030 représenteront un défi collectif, à la croisée de l’humain, du numérique et de
+            l’environnement. Je souhaite y apporter ma double expérience – terrain et technique – et mon
+            attachement profond à ce territoire. Avec pragmatisme, curiosité et esprit d’équipe, je veux
+            contribuer, à ma mesure, à un projet porteur de sens et tourné vers l’avenir.
           </p>
         </div>
       </div>
     </template>
+
+
   </SectionPart>
 </template>
 <style scoped lang="scss">
-@use "@/styles/variables" as *;
+@use '@/styles/variables' as *;
 
-.trajectoire-content {
-  max-width: 800px;
+.trajectory-content {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0;
 }
 
-.story-block {
-  display: flex;
-  align-items: flex-start;
-  gap: clamp(1rem, 3vw, 2rem);
-  margin-bottom: clamp(2rem, 4vw, 3rem);
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.6) 100%
-  );
-  border-radius: 20px;
-  border: 1px solid rgba($primary-color, 0.1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.intro {
+  text-align: center;
+  margin-bottom: clamp(3rem, 5vw, 4rem);
+
+  .intro-text {
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+    line-height: 1.8;
+    color: #2d3748;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+
+    strong {
+      color: $primary-color;
+      font-weight: 600;
+      background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
+      padding: 0.1em 0.2em;
+      border-radius: 4px;
+    }
+
+    em {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 20%));
+        border-radius: 1px;
+      }
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+  margin: clamp(3rem, 5vw, 4rem) 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg,
+        rgba($primary-color, 0.8) 0%,
+        rgba($primary-color, 0.4) 100%);
+    border-radius: 2px;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+    padding-left: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 21px;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+      background: $primary-color;
+      border: 4px solid white;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba($primary-color, 0.3);
+      z-index: 2;
+    }
+
+    .timeline-content {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.98);
+      padding: clamp(1.5rem, 3vw, 2rem);
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateX(8px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      h3 {
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0 0 1rem 0;
+        line-height: 1.3;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 40px;
+          height: 3px;
+          background: $primary-color;
+          border-radius: 2px;
+        }
+      }
+
+      p {
+        font-size: clamp(1rem, 1.8vw, 1.1rem);
+        line-height: 1.7;
+        color: #6c757d;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.motivation {
+  margin-top: clamp(4rem, 6vw, 5rem);
+  text-align: center;
+  padding: clamp(2.5rem, 4vw, 3.5rem);
+  background: linear-gradient(135deg,
+      rgba($primary-color, 0.08) 0%,
+      rgba($primary-color, 0.03) 100%);
+  border-radius: 24px;
+  border: 2px solid rgba($primary-color, 0.15);
   position: relative;
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-      45deg,
-      transparent 0%,
-      rgba($primary-color, 0.02) 50%,
-      transparent 100%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.12);
-
-    &::before {
-      opacity: 1;
-    }
-
-    .story-icon {
-      transform: scale(1.1) rotate(5deg);
-    }
-  }
-
-  &.highlight {
-    background: linear-gradient(
-      135deg,
-      rgba($primary-color, 0.08) 0%,
-      rgba($primary-color, 0.05) 100%
-    );
-    border: 2px solid rgba($primary-color, 0.2);
-    box-shadow: 0 6px 25px rgba($primary-color, 0.15),
-      0 2px 8px rgba($primary-color, 0.1);
-
-    &::before {
-      background: linear-gradient(
-        45deg,
+    background: linear-gradient(45deg,
         transparent 0%,
-        rgba($primary-color, 0.05) 50%,
-        transparent 100%
-      );
-    }
-  }
-}
-
-.story-icon {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(60px, 8vw, 80px);
-  height: clamp(60px, 8vw, 80px);
-  background: linear-gradient(
-    135deg,
-    rgba($primary-color, 0.1) 0%,
-    rgba($primary-color, 0.05) 100%
-  );
-  border-radius: 50%;
-  flex-shrink: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(
-      45deg,
-      rgba($primary-color, 0.2) 0%,
-      transparent 50%,
-      rgba($primary-color, 0.2) 100%
-    );
-    border-radius: 50%;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.3s ease;
+        rgba($primary-color, 0.02) 50%,
+        transparent 100%);
+    animation: shimmer 4s ease-in-out infinite;
   }
 
-  .story-block:hover & {
-    &::after {
-      opacity: 1;
-    }
-  }
-}
-
-.story-text {
-  flex: 1;
-  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
-  line-height: 1.7;
-  color: rgba($primary-color, 0.9);
-  margin: 0;
-  text-align: justify;
-  hyphens: auto;
-
-  strong {
-    color: $primary-color;
-    font-weight: 700;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, $primary-color 0%, transparent 100%);
-      opacity: 0.3;
-      transition: opacity 0.3s ease;
-    }
-
-    .story-block:hover & {
-      &::after {
-        opacity: 0.6;
-      }
-    }
-  }
-
-  em {
-    color: rgba($primary-color, 0.8);
-    font-style: italic;
-    font-weight: 500;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: '"';
-      color: rgba($primary-color, 0.4);
-      font-size: 1.2em;
-      font-weight: 300;
-    }
-  }
-
-  .emphasis {
-    display: inline-block;
-    font-size: 1.1em;
+  h3 {
+    font-size: clamp(1.4rem, 2.8vw, 1.8rem);
     font-weight: 600;
-    color: $primary-color;
-    margin: 0.5rem 0;
-    padding: 0.25rem 0.75rem;
-    background: rgba($primary-color, 0.08);
-    border-radius: 8px;
-    border-left: 3px solid $primary-color;
+    color: #2c3e50;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: $primary-color;
+      border-radius: 2px;
+    }
   }
 
-  .vision {
-    display: block;
-    font-style: italic;
-    color: rgba($primary-color, 0.7);
-    margin-top: 0.75rem;
-    padding-left: 1rem;
-    border-left: 2px solid rgba($primary-color, 0.3);
-    font-size: 0.95em;
-    line-height: 1.6;
+  p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    color: #2c3e50;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
 }
 
-// Animation d'entrée en scroll
-@keyframes fadeInUp {
+// Animations
+@keyframes shimmer {
+
+  0%,
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(100%);
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(-30px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.story-block {
-  animation: fadeInUp 0.6s ease-out;
+// Animation d'entrée séquentielle
+.timeline-item {
+  animation: fadeInLeft 0.6s ease-out;
+  animation-fill-mode: both;
 
   &:nth-child(1) {
     animation-delay: 0.1s;
   }
 
   &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  &:nth-child(3) {
     animation-delay: 0.3s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 0.4s;
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .story-block {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+.motivation {
+  animation: fadeInLeft 0.6s ease-out 0.5s;
+  animation-fill-mode: both;
+}
 
-    .story-text {
-      text-align: left;
+// Responsive Design
+@media (max-width: 768px) {
+  .timeline {
+    &::before {
+      left: 20px;
+    }
+
+    .timeline-item {
+      padding-left: 60px;
+
+      .timeline-marker {
+        left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+
+      .timeline-content {
+        &:hover {
+          transform: translateX(4px);
+        }
+      }
     }
   }
 
-  .story-icon {
-    align-self: center;
+  .motivation {
+    text-align: left;
   }
 }
 
 @media (max-width: 480px) {
-  .story-block {
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
+  .timeline {
+    &::before {
+      left: 15px;
+    }
 
-  .story-text {
-    font-size: 1rem;
+    .timeline-item {
+      padding-left: 45px;
 
-    .emphasis {
-      font-size: 1em;
-      padding: 0.2rem 0.5rem;
+      .timeline-marker {
+        left: 6px;
+        width: 16px;
+        height: 16px;
+        border-width: 3px;
+      }
     }
   }
 }

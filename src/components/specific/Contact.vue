@@ -5,14 +5,16 @@ import SectionPart from "../sectionPart.vue"
 </script>
 
 <template>
-    <SectionPart title="Un pas vers demain">
+    <SectionPart title="Prêt à construire l’avenir des Jeux 2030, ensemble">
         <template #default>
             <div class="contact-content">
                 <div class="intro-text">
                     <p class="main-message">
-                        Les <strong>Jeux de 2030</strong> ne seront pas l'œuvre d'une personne, mais d'une <em>énergie
-                            collective</em>.
-                        Si vous êtes à la recherche d'un partenaire engagé, aligné avec l'ambition de ce projet…
+                        Je suis convaincu que la réussite de ce projet passe par une vraie complémentarité entre tous
+                        ses acteurs — une démarche à laquelle je veux contribuer pleinement, avec loyauté, énergie et
+                        pragmatisme.
+
+                        Si vous cherchez un partenaire fiable, engagé et agile, je serais ravi d’échanger avec vous.
                     </p>
                 </div>
 
@@ -54,8 +56,8 @@ import SectionPart from "../sectionPart.vue"
 
                 <div class="closing-message">
                     <p class="vision-text">
-                        <em>"Ensemble, transformons les défis olympiques en opportunités durables pour notre territoire
-                            et notre avenir."</em>
+                        <em>Ensemble, transformons les défis olympiques en opportunités durables pour notre territoire
+                            et notre avenir.</em>
                     </p>
                 </div>
             </div>
@@ -76,26 +78,39 @@ import SectionPart from "../sectionPart.vue"
 }
 
 .intro-text {
-    .section-subtitle {
-        font-size: clamp(1.3rem, 3vw, 1.6rem);
-        font-weight: 600;
-        color: $primary-color;
-        margin: 0 0 1rem 0;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        position: relative;
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+    line-height: 1.8;
+    color: #2d3748;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 400;
+    letter-spacing: 0.01em;
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, $primary-color 0%, transparent 100%);
-            border-radius: 2px;
-        }
+    strong {
+      color: $primary-color;
+      font-weight: 600;
+      background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
+      padding: 0.1em 0.2em;
+      border-radius: 4px;
     }
+
+    em {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 20%));
+        border-radius: 1px;
+      }
+    }
+  
 
     .main-message {
         font-size: clamp(1.1rem, 2.5vw, 1.3rem);
