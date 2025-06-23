@@ -23,10 +23,13 @@ import SectionPart from "../sectionPart.vue"
                             <span class="icon">🏔️</span>
                             <div class="content">
                                 <h4>Un engagement local, naturel et sincère</h4>
-                                <p>Né et élevé dans les Alpes, j’y ai forgé ma persévérance à travers le trail,
-                                    l’escalade ou le ski. Ce territoire m’a construit, et je souhaite aujourd’hui lui
-                                    rendre en contribuant à une organisation respectueuse de son environnement, tournée
-                                    vers l’avenir.</p>
+                                <p>
+                                    Né et élevé dans les Alpes, j’y ai forgé ma persévérance à travers les sports de
+                                    montagne : ski de fond, ski alpin, alpinisme, escalade, trail… Ce territoire m’a
+                                    construit. C’est pourquoi je souhaite m’engager pour lui, en contribuant à une
+                                    organisation respectueuse de son environnement et résolument tournée vers l’avenir.
+                                </p>
+
                             </div>
                         </div>
 
