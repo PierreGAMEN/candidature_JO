@@ -37,9 +37,10 @@ import SectionPart from "../sectionPart.vue"
                             <span class="icon">🤝</span>
                             <div class="content">
                                 <h4>Un savoir-faire issu du terrain et du collectif</h4>
-                                <p>Huit années chez Decathlon m’ont formé à la gestion d’équipe, la rigueur
-                                    opérationnelle, et la coordination de projets. En tant que développeur web,
-                                    j’apporte aujourd’hui cette double compétence humaine et technique, avec une
+                                <p>Huit années chez Decathlon et mon expérience en tant que développeur web m’ont formé
+                                    à la gestion d’équipe, la rigueur
+                                    opérationnelle, et la coordination de projets. J’apporte aujourd’hui ces
+                                    compétence humaine et technique, avec une
                                     conviction forte : la réussite naît de l’intelligence collective.</p>
                             </div>
                         </div>
