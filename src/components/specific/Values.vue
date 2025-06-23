@@ -71,12 +71,6 @@ import SectionPart from '../sectionPart.vue';
                         </div>
                     </div>
                 </div>
-                <!-- <div class="engagement">
-                    <blockquote>
-                        Mon engagement : mettre mon expérience au service de Jeux exemplaires,
-                        ancrés dans leur territoire et tournés vers l'avenir.
-                    </blockquote>
-                </div> -->
             </div>
         </template>
     </SectionPart>
@@ -94,24 +88,19 @@ import SectionPart from '../sectionPart.vue';
 .intro-text {
     font-size: clamp(1.1rem, 2.5vw, 1.25rem);
     line-height: 1.8;
-    color: #2d3748;
-    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xl);
     font-weight: 400;
     letter-spacing: 0.01em;
-
-    strong {
-        color: $primary-color;
-        font-weight: 600;
-        background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
-        padding: 0.1em 0.2em;
-        border-radius: 4px;
-    }
+    text-align: center;
+    position: relative;
 
     em {
         color: $primary-color;
         font-style: normal;
         font-weight: 600;
         position: relative;
+        z-index: 1;
 
         &::after {
             content: '';
@@ -124,17 +113,22 @@ import SectionPart from '../sectionPart.vue';
             border-radius: 1px;
         }
     }
+
+    strong {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .motivation-section {
-    margin: clamp(2rem, 4vw, 3rem) 0;
+    margin: var(--spacing-xl) 0;
 }
 
 .reasons-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: clamp(2rem, 4vw, 3rem);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .reason-item {
@@ -142,22 +136,48 @@ import SectionPart from '../sectionPart.vue';
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
     background: rgba(255, 255, 255, 0.98);
-    border-radius: 16px;
+    border-radius: var(--border-radius-lg);
     border: 1px solid rgba(0, 0, 0, 0.06);
-    border-top: 4px solid transparent;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
 
-    // Touche de couleur subtile par position (bordure gauche uniquement)
+    // Anneau olympique décoratif en arrière-plan
+    &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        opacity: 0.2;
+        transition: var(--transition);
+        z-index: 0;
+    }
+
+    // Effet de survol sur l'anneau
+    &:hover::before {
+        opacity: 0.5;
+        transform: scale(1.3);
+        top: -25px;
+        right: -25px;
+    }
+
+    // Couleurs des anneaux olympiques
     &:nth-child(1) {
-        // 🎯 Approche pragmatique - BLEU
-        border-top-color: #0085C3;
+
+        // 🎯 Approche pragmatique - BLEU olympique
+        &::before {
+            border-color: #0085C3;
+        }
 
         .content h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             position: relative;
 
             &::after {
@@ -174,11 +194,14 @@ import SectionPart from '../sectionPart.vue';
     }
 
     &:nth-child(2) {
-        // 🤝 Capacité à fédérer - JAUNE
-        border-top-color: #FFD100;
+
+        // 🤝 Capacité à fédérer - JAUNE olympique
+        &::before {
+            border-color: #000000;
+        }
 
         .content h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             position: relative;
 
             &::after {
@@ -188,18 +211,21 @@ import SectionPart from '../sectionPart.vue';
                 left: 0;
                 width: 30px;
                 height: 2px;
-                background: #FFD100;
+                background: black;
                 border-radius: 1px;
             }
         }
     }
 
     &:nth-child(3) {
-        // ⚡ Adaptabilité - NOIR
-        border-top-color: #333333;
+
+        // ⚡ Adaptabilité - NOIR olympique
+        &::before {
+            border-color: red;
+        }
 
         .content h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             position: relative;
 
             &::after {
@@ -209,18 +235,21 @@ import SectionPart from '../sectionPart.vue';
                 left: 0;
                 width: 30px;
                 height: 2px;
-                background: #333333;
+                background: red;
                 border-radius: 1px;
             }
         }
     }
 
     &:nth-child(4) {
-        // 🏔️ Engagement local - VERT
-        border-top-color: #00A651;
+
+        // 📊 Analyse - VERT olympique
+        &::before {
+            border-color: yellow;
+        }
 
         .content h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             position: relative;
 
             &::after {
@@ -230,18 +259,21 @@ import SectionPart from '../sectionPart.vue';
                 left: 0;
                 width: 30px;
                 height: 2px;
-                background: #00A651;
+                background: yellow;
                 border-radius: 1px;
             }
         }
     }
 
     &:nth-child(5) {
-        // 🚀 Vision globale - ROUGE
-        border-top-color: #EE334E;
+
+        // 🚀 Vision durable - ROUGE olympique
+        &::before {
+            border-color: #2e9b33;
+        }
 
         .content h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             position: relative;
 
             &::after {
@@ -251,16 +283,15 @@ import SectionPart from '../sectionPart.vue';
                 left: 0;
                 width: 30px;
                 height: 2px;
-                background: #EE334E;
+                background: #2e9b33;
                 border-radius: 1px;
             }
         }
     }
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        border-top-width: 10px;
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
     }
 }
 
@@ -274,8 +305,10 @@ import SectionPart from '../sectionPart.vue';
     font-size: clamp(1.5rem, 2.5vw, 1.8rem);
     background: #f8f9fa;
     color: #6c757d;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 2;
 
     &:hover {
         transform: scale(1.05);
@@ -286,87 +319,27 @@ import SectionPart from '../sectionPart.vue';
 .content {
     text-align: center;
     flex: 1;
+    position: relative;
+    z-index: 1;
 
     h4 {
         font-size: clamp(1.2rem, 2.5vw, 1.4rem);
         font-weight: 600;
         margin: 0 0 1rem 0;
         line-height: 1.3;
-        transition: all 0.3s ease;
+        transition: var(--transition);
     }
 
     p {
         font-size: clamp(0.9rem, 1.8vw, 1rem);
         line-height: 1.6;
-        color: #6c757d;
+        color: var(--text-secondary);
         margin: 0;
         text-align: left;
     }
 }
 
-.engagement {
-    margin-top: clamp(3rem, 5vw, 4rem);
-    text-align: center;
-
-    blockquote {
-        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-        font-style: italic;
-        line-height: 1.7;
-        color: #2c3e50;
-        margin: 0;
-        padding: clamp(2rem, 4vw, 3rem);
-        background: linear-gradient(135deg,
-                rgba($primary-color, 0.08) 0%,
-                rgba($primary-color, 0.03) 100%);
-        border-radius: 24px;
-        border: 2px solid rgba($primary-color, 0.15);
-        position: relative;
-        overflow: hidden;
-        max-width: 800px;
-        margin: 0 auto;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg,
-                    transparent 0%,
-                    rgba($primary-color, 0.02) 50%,
-                    transparent 100%);
-            animation: shimmer 4s ease-in-out infinite;
-        }
-
-        &::after {
-            content: '"';
-            position: absolute;
-            top: 15px;
-            left: 25px;
-            font-size: clamp(2.5rem, 5vw, 3rem);
-            color: rgba($primary-color, 0.2);
-            font-family: serif;
-            line-height: 1;
-        }
-    }
-}
-
 // Animations
-@keyframes shimmer {
-
-    0%,
-    100% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    50% {
-        transform: translateX(100%);
-        opacity: 0.3;
-    }
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -395,11 +368,11 @@ import SectionPart from '../sectionPart.vue';
 @media (max-width: 768px) {
     .reasons-list {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: var(--spacing-md);
     }
 
     .reason-item {
-        padding: 1.5rem;
+        padding: var(--spacing-md);
 
         &:hover {
             transform: translateY(-4px) scale(1.01);
@@ -415,36 +388,18 @@ import SectionPart from '../sectionPart.vue';
         height: 60px;
         font-size: 1.5rem;
     }
-
-    .engagement blockquote {
-        padding: 1.5rem;
-
-        &::after {
-            font-size: 2rem;
-            top: 10px;
-            left: 15px;
-        }
-    }
 }
 
 @media (max-width: 480px) {
     .reason-item {
-        padding: 1.25rem;
-        gap: 1rem;
+        padding: var(--spacing-sm);
+        gap: var(--spacing-sm);
     }
 
     .card-icon {
         width: 50px;
         height: 50px;
         font-size: 1.3rem;
-    }
-
-    .engagement blockquote {
-        padding: 1.25rem;
-
-        &::after {
-            display: none;
-        }
     }
 }
 </style>

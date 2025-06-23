@@ -9,10 +9,9 @@ import SectionPart from "../sectionPart.vue"
         <template #default>
             <div class="adventure-content">
                 <p class="intro-text">
-                    Changer de cap professionnel, c’est bien plus que chercher un poste : c’est choisir de s’impliquer
-                    dans <strong>une aventure collective qui porte des valeurs fortes et un impact concret.</strong>
-                    Pour moi, ces Jeux
-                    ne sont pas un simple événement : ils représentent une opportunité unique de contribuer à l’avenir
+                    Ces Jeux
+                    ne sont pas un simple événement : ils représentent une <strong>opportunité unique</strong> de
+                    contribuer à l’avenir
                     de mon territoire, <em>les Alpes</em>, que je connais, aime et respecte profondément.
                 </p>
 
@@ -36,9 +35,9 @@ import SectionPart from "../sectionPart.vue"
                             <div class="content">
                                 <h4>Un savoir-faire issu du terrain et du collectif</h4>
                                 <p>Huit années chez Decathlon m’ont formé à la gestion d’équipe, la rigueur
-                                    opérationnelle, et la coordination de projets. Reconverti en développeur web,
-                                    j’apporte aujourd’hui cette double compétence humaine et technique, avec toujours la
-                                    même conviction : la réussite vient de l’intelligence collective.</p>
+                                    opérationnelle, et la coordination de projets. En tant que développeur web,
+                                    j’apporte aujourd’hui cette double compétence humaine et technique, avec une
+                                    conviction forte : la réussite naît de l’intelligence collective.</p>
                             </div>
                         </div>
 
@@ -53,11 +52,10 @@ import SectionPart from "../sectionPart.vue"
                         </div>
                     </div>
                 </div>
-
                 <div class="engagement">
-                    <blockquote>
-                        "Mon engagement : mettre mon expertise au service de Jeux exemplaires,
-                        ancrés dans leur territoire et tournés vers l'avenir."
+                    <blockquote class="blockquote-accent">
+                        Mon engagement : mettre toute mon énergie au service de Jeux exemplaires,
+                        ancrés dans leur territoire et tournés vers l'avenir.
                     </blockquote>
                 </div>
             </div>
@@ -82,14 +80,7 @@ import SectionPart from "../sectionPart.vue"
         margin-bottom: var(--spacing-lg);
         font-weight: 400;
         letter-spacing: 0.01em;
-
-        strong {
-            color: $primary-color;
-            font-weight: 600;
-            background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
-            padding: 0.1em 0.2em;
-            border-radius: 4px;
-        }
+        text-align: center;
 
         em {
             color: $primary-color;
@@ -205,62 +196,10 @@ import SectionPart from "../sectionPart.vue"
 
     .engagement {
         margin-top: var(--spacing-lg);
-
-        blockquote {
-            background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 5%) 50%, lighten($primary-color, 10%) 100%);
-            color: white;
-            padding: var(--spacing-lg) var(--spacing-md);
-            border-radius: var(--border-radius);
-            font-size: clamp(1.05rem, 2.5vw, 1.2rem);
-            font-style: italic;
-            font-weight: 500;
-            line-height: 1.7;
-            margin: 0;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 8px 25px rgba($primary-color, 0.25), 0 4px 10px rgba(0, 0, 0, 0.1);
-            letter-spacing: 0.01em;
-
-            &::before,
-            &::after {
-                content: '"';
-                font-size: clamp(2.5rem, 4vw, 3.5rem);
-                position: absolute;
-                opacity: 0.2;
-                font-family: Georgia, serif;
-                font-weight: bold;
-                transition: var(--transition);
-            }
-
-            &::before {
-                top: -5px;
-                left: var(--spacing-md);
-            }
-
-            &::after {
-                bottom: -15px;
-                right: var(--spacing-md);
-            }
-
-            &:hover {
-                transform: translateY(-1px);
-                box-shadow: 0 12px 35px rgba($primary-color, 0.3), 0 6px 15px rgba(0, 0, 0, 0.15);
-
-                &::before,
-                &::after {
-                    opacity: 0.3;
-                }
-            }
-        }
     }
 
     // Responsive optimisé
     @media (max-width: 768px) {
-        --spacing-sm: 0.5rem;
-        --spacing-md: 1rem;
-        --spacing-lg: 2rem;
-        --border-radius: 12px;
-
         .motivation-section {
             .reasons-list .reason-item {
                 padding: var(--spacing-md);
@@ -269,15 +208,6 @@ import SectionPart from "../sectionPart.vue"
                 .icon {
                     font-size: 1.75rem;
                 }
-            }
-        }
-
-        .engagement blockquote {
-            padding: var(--spacing-md);
-
-            &::before,
-            &::after {
-                font-size: 2rem;
             }
         }
     }

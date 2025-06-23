@@ -34,7 +34,7 @@ import SectionPart from '../sectionPart.vue';
             <div class="timeline-content">
               <h3>Développeur web</h3>
               <p>
-                Aujourd’hui, je conçois et maintiens des solutions numériques pensées pour les utilisateurs, fiables et
+                Je conçois et maintiens des solutions numériques pensées pour les utilisateurs, fiables et
                 responsables.
               </p>
             </div>
@@ -66,23 +66,15 @@ import SectionPart from '../sectionPart.vue';
 
 .intro {
   text-align: center;
-  margin-bottom: clamp(3rem, 5vw, 4rem);
+  margin-bottom: var(--spacing-xl);
 
   .intro-text {
     font-size: clamp(1.1rem, 2.5vw, 1.25rem);
     line-height: 1.8;
-    color: #2d3748;
+    color: var(--text-primary);
     margin-bottom: var(--spacing-lg);
     font-weight: 400;
     letter-spacing: 0.01em;
-
-    strong {
-      color: $primary-color;
-      font-weight: 600;
-      background: linear-gradient(120deg, transparent 0%, rgba($primary-color, 0.1) 0%);
-      padding: 0.1em 0.2em;
-      border-radius: 4px;
-    }
 
     em {
       color: $primary-color;
@@ -106,7 +98,7 @@ import SectionPart from '../sectionPart.vue';
 
 .timeline {
   position: relative;
-  margin: clamp(3rem, 5vw, 4rem) 0;
+  margin: var(--spacing-xl) 0;
 
   &::before {
     content: '';
@@ -125,7 +117,7 @@ import SectionPart from '../sectionPart.vue';
     position: relative;
     display: flex;
     align-items: flex-start;
-    margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+    margin-bottom: var(--spacing-lg);
     padding-left: 80px;
 
     &:last-child {
@@ -148,7 +140,7 @@ import SectionPart from '../sectionPart.vue';
     .timeline-content {
       flex: 1;
       background: rgba(255, 255, 255, 0.98);
-      padding: clamp(1.5rem, 3vw, 2rem);
+      padding: var(--spacing-lg);
       border-radius: 16px;
       border: 1px solid rgba(0, 0, 0, 0.06);
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -162,7 +154,7 @@ import SectionPart from '../sectionPart.vue';
       h3 {
         font-size: clamp(1.3rem, 2.5vw, 1.6rem);
         font-weight: 600;
-        color: #2c3e50;
+        color: var(--text-primary);
         margin: 0 0 1rem 0;
         line-height: 1.3;
         position: relative;
@@ -182,7 +174,7 @@ import SectionPart from '../sectionPart.vue';
       p {
         font-size: clamp(1rem, 1.8vw, 1.1rem);
         line-height: 1.7;
-        color: #6c757d;
+        color: var(--text-secondary);
         margin: 0;
       }
     }
@@ -190,9 +182,9 @@ import SectionPart from '../sectionPart.vue';
 }
 
 .motivation {
-  margin-top: clamp(4rem, 6vw, 5rem);
+  margin-top: var(--spacing-xl);
   text-align: center;
-  padding: clamp(2.5rem, 4vw, 3.5rem);
+  padding: var(--spacing-xl);
   background: linear-gradient(135deg,
       rgba($primary-color, 0.08) 0%,
       rgba($primary-color, 0.03) 100%);
@@ -218,7 +210,7 @@ import SectionPart from '../sectionPart.vue';
   h3 {
     font-size: clamp(1.4rem, 2.8vw, 1.8rem);
     font-weight: 600;
-    color: #2c3e50;
+    color: var(--text-primary);
     margin: 0 0 1.5rem 0;
     line-height: 1.3;
     position: relative;
@@ -240,7 +232,7 @@ import SectionPart from '../sectionPart.vue';
   p {
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.7;
-    color: #2c3e50;
+    color: var(--text-primary);
     margin: 0;
     max-width: 800px;
     margin: 0 auto;

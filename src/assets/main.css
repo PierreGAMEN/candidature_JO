@@ -1,13 +1,138 @@
+/* Réinitialisation et styles globaux cohérents */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Variables CSS globales pour la cohérence */
+:root {
+    /* Espacements cohérents */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 3.5rem;
+    
+    /* Border radius cohérent */
+    --border-radius: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 24px;
+    
+    /* Transitions cohérentes */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease;
+    
+    /* Couleurs de texte standardisées */
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+    
+    /* Ombres cohérentes */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Typographie de base cohérente */
 p {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #424242;
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Variables pour les éléments mis en valeur */
+:root {
+    --highlight-color: #0f0d76;
+    --highlight-bg: linear-gradient(120deg, transparent 0%, rgba(15, 13, 118, 0.1) 0%);
+    --highlight-padding: 0.1em 0.2em;
+    --highlight-border-radius: 4px;    /* Variables pour les blockquotes */
+    --blockquote-bg-light: linear-gradient(135deg, rgba(15, 13, 118, 0.08) 0%, rgba(15, 13, 118, 0.03) 100%);
+    --blockquote-bg-accent: linear-gradient(135deg, #0f0d76 0%, #1a176b 50%, #0f0d76 100%);
+    --blockquote-border: 2px solid rgba(15, 13, 118, 0.15);
+    --blockquote-shadow-accent: 0 8px 25px rgba(15, 13, 118, 0.25), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+strong, .highlight {
+    color: var(--highlight-color);
+    font-weight: 600;
+    background: var(--highlight-bg);
+    padding: var(--highlight-padding);
+    border-radius: var(--highlight-border-radius);
+}
+
+em {
+    font-style: italic;
+}
+
+/* Style par défaut pour tous les blockquotes */
+blockquote {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+    padding: clamp(2rem, 4vw, 3rem);
+    border-radius: var(--border-radius-xl);
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+/* Variante principale (claire) */
+blockquote, 
+.blockquote-main {
+    color: var(--text-primary);
+    background: var(--blockquote-bg-light);
+    border: var(--blockquote-border);
+    box-shadow: var(--shadow-md);
+}
+
+blockquote::before, 
+.blockquote-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0f0d76, #1a176b, #0f0d76);
+    border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+}
+
+/* Variante accentuée (colorée) - sans guillemets */
+.blockquote-accent {
+    color: white;
+    background: var(--blockquote-bg-accent);
+    border: none;
+    box-shadow: var(--blockquote-shadow-accent);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+/* Responsive pour blockquotes */
+@media (max-width: 768px) {
+    blockquote {
+        padding: clamp(1.5rem, 3vw, 2rem);
+        font-size: clamp(1rem, 2.2vw, 1.1rem);
+    }
 }
 

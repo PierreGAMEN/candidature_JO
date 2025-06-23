@@ -14,7 +14,7 @@
                 <!-- Contenu central -->
                 <div class="hero-text">
                     <h1 class="hero-title">PIERRE GAMEN</h1>
-                    <p class="hero-subtitle">Futur partenaire des Jeux Olympiques et Paralympiques d'hiver</p>
+                    <p class="hero-subtitle">Futur acteur des Jeux Olympiques et Paralympiques d'hiver</p>
                 </div>
 
                 <!-- Divider droit (caché en mobile) -->

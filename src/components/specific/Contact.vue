@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import SectionPart from "../sectionPart.vue"
 
-//script a placer ici 
+// Données de contact
+const contactData = {
+    email: 'pierre.gamen@gmail.com',
+    phone: '0673607777',
+    phoneDisplay: '06 73 60 77 77'
+}
 </script>
 
 <template>
@@ -10,49 +15,42 @@ import SectionPart from "../sectionPart.vue"
             <div class="contact-content">
                 <div class="intro-text">
                     <p class="main-message">
-                        Je suis convaincu que la réussite passera par des femmes et des hommes engagés, fiables et
+                        Je suis convaincu que la réussite passera par des <strong>femmes et des hommes engagés, fiables
+                            et</strong>
                         agiles.
                         Si vous cherchez un partenaire qui conjugue expérience, valeurs et esprit d’équipe : je suis là.
                         Ancré dans mes montagnes, tourné vers l’avenir.
                         Prêt à contribuer pleinement à cette aventure.
                     </p>
+                    <br />
+                    <p class="search-statement">
+                        C’est dans des missions mêlant coordination, vision et impact collectif que je serai le plus
+                        utile. Mon expérience en encadrement, en gestion de projet, ainsi que mes compétences digitales
+                        font de moi un atout pour piloter des équipes et accompagner des dynamiques ambitieuses.
+                    </p>
                 </div>
 
                 <div class="call-to-action">
-
-
                     <div class="action-section">
                         <h4 class="action-title">👥 Contactez-moi. Échangeons. Construisons.</h4>
 
                         <div class="contact-buttons">
-                            <a href="mailto:pierregamen@gmail.com" class="btn-primary">
-                                <span class="btn-icon">💬</span>
-                                <span class="btn-text">Échanger maintenant</span>
+                            <a :href="`mailto:${contactData.email}`" class="btn-primary btn-email">
+                                <span class="btn-icon">📧</span>
+                                <span class="btn-text">{{ contactData.email }}</span>
                             </a>
-
-                            <div class="contact-info">
-                                <div class="info-item">
-                                    <span class="info-icon">📧</span>
-                                    <span class="info-text">pierregamen@gmail.com</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="info-icon">📍</span>
-                                    <span class="info-text">Région Alpine, France</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="info-icon">💼</span>
-                                    <span class="info-text">Développeur • Manager • Visionnaire</span>
-                                </div>
-                            </div>
+                            <a :href="`tel:${contactData.phone}`" class="btn-primary btn-phone">
+                                <span class="btn-icon">📞</span>
+                                <span class="btn-text">{{ contactData.phoneDisplay }}</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="closing-message">
-                    <p class="vision-text">
-                        <em>Ensemble, transformons les défis olympiques en opportunités durables pour notre territoire
-                            et notre avenir.</em>
-                    </p>
+                <div class="engagement">
+                    <blockquote class="blockquote-accent">
+                        Ensemble, transformons les défis olympiques en opportunités durables pour notre territoire
+                        et notre avenir.
+                    </blockquote>
                 </div>
             </div>
         </template>
@@ -66,7 +64,11 @@ import SectionPart from "../sectionPart.vue"
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: clamp(2.5rem, 5vw, 4rem);
+    gap: var(--spacing-xl);
+}
+
+.engagement {
+    margin-top: var(--spacing-lg);
 }
 
 .intro-text {
@@ -75,11 +77,27 @@ import SectionPart from "../sectionPart.vue"
     .main-message {
         font-size: clamp(1.1rem, 2.2vw, 1.3rem);
         line-height: 1.8;
-        color: #2c3e50;
-        margin: 0;
-        margin: 0 auto;
+        color: var(--text-primary);
+        margin: 0 0 var(--spacing-lg) 0;
         font-weight: 400;
         letter-spacing: 0.01em;
+    }
+
+    .search-statement {
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        line-height: 1.7;
+        color: var(--text-muted);
+        margin: 0;
+        padding: var(--spacing-md);
+        background: linear-gradient(135deg,
+                rgba($primary-color, 0.06) 0%,
+                rgba($primary-color, 0.02) 100%);
+        border-radius: var(--border-radius);
+        border-left: 4px solid $primary-color;
+        position: relative;
+        font-weight: 500;
+        max-width: 750px;
+        margin: 0 auto;
     }
 }
 
@@ -87,7 +105,7 @@ import SectionPart from "../sectionPart.vue"
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(2rem, 4vw, 3rem);
+    gap: var(--spacing-xl);
 }
 
 .action-section {
@@ -97,8 +115,8 @@ import SectionPart from "../sectionPart.vue"
     .action-title {
         font-size: clamp(1.3rem, 2.5vw, 1.6rem);
         font-weight: 600;
-        color: #2c3e50;
-        margin: 0 0 clamp(2rem, 3vw, 2.5rem) 0;
+        color: var(--text-primary);
+        margin: 0 0 var(--spacing-lg) 0;
         position: relative;
 
         &::after {
@@ -117,9 +135,10 @@ import SectionPart from "../sectionPart.vue"
 
 .contact-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: clamp(2rem, 3vw, 2.5rem);
+    gap: var(--spacing-md);
     width: 100%;
 }
 
@@ -127,29 +146,16 @@ import SectionPart from "../sectionPart.vue"
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    padding: clamp(1rem, 2.2vw, 1.2rem) clamp(2rem, 4vw, 2.8rem);
-    background: $primary-color;
-    color: white;
+    gap: 0.5rem;
+    padding: var(--spacing-sm) var(--spacing-md);
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: clamp(1rem, 2vw, 1.1rem);
-    box-shadow: 0 2px 8px rgba($primary-color, 0.2);
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
     transition: all 0.2s ease;
     position: relative;
-    border: 2px solid $primary-color;
-
-    &:hover {
-        background: white;
-        color: $primary-color;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 16px rgba($primary-color, 0.25);
-    }
-
-    &:active {
-        transform: translateY(0);
-    }
+    border: 2px solid transparent;
+    min-width: 180px;
 
     .btn-icon {
         font-size: 1.1em;
@@ -158,67 +164,39 @@ import SectionPart from "../sectionPart.vue"
     .btn-text {
         font-weight: 600;
         letter-spacing: 0.01em;
+        white-space: nowrap;
+    }
+
+    &:active {
+        transform: translateY(0);
     }
 }
 
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    width: 100%;
-    max-width: 600px;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
+.btn-email {
+    background: $primary-color;
+    color: white;
+    border-color: $primary-color;
+    box-shadow: 0 2px 8px rgba($primary-color, 0.2);
 
     &:hover {
-        border-color: rgba($primary-color, 0.3);
-        box-shadow: 0 2px 8px rgba($primary-color, 0.1);
-    }
-
-    .info-icon {
-        font-size: 1.1rem;
-        width: 20px;
-        text-align: center;
-        flex-shrink: 0;
-        color: #64748b;
-    }
-
-    .info-text {
-        font-size: clamp(0.9rem, 1.8vw, 1rem);
-        color: #475569;
-        font-weight: 500;
+        background: white;
+        color: $primary-color;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba($primary-color, 0.25);
     }
 }
 
-.closing-message {
-    text-align: center;
-    margin-top: clamp(1rem, 2vw, 2rem);
+.btn-phone {
+    background: white;
+    color: #059669;
+    border-color: #059669;
+    box-shadow: 0 2px 8px rgba(#059669, 0.15);
 
-    .vision-text {
-        font-size: clamp(1rem, 2vw, 1.15rem);
-        line-height: 1.7;
-        margin: 0;
-        padding: clamp(1.5rem, 3vw, 2rem);
-        background: #f8fafc;
-        border-radius: 12px;
-        border-left: 4px solid $primary-color;
-        max-width: 700px;
-        margin: 0 auto;
-
-        em {
-            color: #64748b;
-            font-style: italic;
-            font-weight: 500;
-        }
+    &:hover {
+        background: #059669;
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba(#059669, 0.25);
     }
 }
 
@@ -244,46 +222,38 @@ import SectionPart from "../sectionPart.vue"
     animation-fill-mode: both;
 }
 
-.contact-info {
+.engagement {
     animation: fadeInUp 0.6s ease-out 0.2s;
-    animation-fill-mode: both;
-}
-
-.closing-message {
-    animation: fadeInUp 0.6s ease-out 0.3s;
     animation-fill-mode: both;
 }
 
 // Responsive Design
 @media (max-width: 768px) {
     .contact-content {
-        gap: 2rem;
+        gap: var(--spacing-lg);
     }
 
-    .contact-info {
-        grid-template-columns: 1fr;
-        max-width: 100%;
+    .contact-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
     }
 
-    .info-item {
-        justify-content: center;
-        text-align: center;
+    .btn-primary {
+        width: 100%;
+        max-width: 280px;
+        min-width: auto;
     }
 }
 
 @media (max-width: 480px) {
     .btn-primary {
         width: 100%;
-        max-width: 320px;
-    }
+        max-width: 100%;
+        padding: var(--spacing-sm) var(--spacing-md);
 
-    .info-item {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1.25rem;
-
-        .info-icon {
-            width: auto;
+        .btn-text {
+            white-space: normal;
+            text-align: center;
         }
     }
 
