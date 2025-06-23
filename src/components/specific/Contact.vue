@@ -18,7 +18,7 @@ const contactData = {
                         Je suis convaincu que la réussite passera par des <strong>femmes et des hommes engagés, fiables
                             et</strong>
                         agiles.
-                        Si vous cherchez un partenaire qui conjugue expérience, valeurs et esprit d’équipe : je suis là.
+                        Si vous cherchez un collaborateur qui conjugue expérience, valeurs et esprit d’équipe : je suis là.
                         Ancré dans mes montagnes, tourné vers l’avenir.
                         Prêt à contribuer pleinement à cette aventure.
                     </p>
