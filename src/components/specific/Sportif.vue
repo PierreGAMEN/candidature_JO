@@ -57,8 +57,8 @@ import SectionPart from '../sectionPart.vue';
                             <p>
                                 J’ai suivi un cursus unique au lycée de Moûtiers, en <strong>section montagne</strong>
                                 pendant 4 ans. Cette formation m’a permis d’acquérir les bases techniques et la culture
-                                de la montagne à travers l’<strong>alpinisme</strong>, le <strong>ski de
-                                    randonnée</strong>, l’<strong>orientation</strong> et l’<strong>escalade</strong>.
+                                de la montagne à travers l’alpinisme, le ski de
+                                    randonnée, l’orientation et l’escalade.
                             </p>
                             <p>
                                 J’ai également validé une <strong>formation d’accompagnateur en moyenne
