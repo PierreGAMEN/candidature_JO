@@ -10,7 +10,7 @@ import SectionPart from '../sectionPart.vue';
                     <div class="hero-main">
                         <div class="profile-content">
                             <div class="profile-image-section">
-                                <img src="/pg-sport.jpg" alt="Pierre GAMEN" class="main-photo" />
+                                <img src="/photoPg.png" alt="Pierre GAMEN" class="main-photo" />
                                 <div class="olympic-badge">
                                     <div class="olympic-rings-mini"></div>
                                 </div>
