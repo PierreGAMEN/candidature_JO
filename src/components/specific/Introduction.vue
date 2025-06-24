@@ -3,13 +3,22 @@ import SectionPart from '../sectionPart.vue';
 </script>
 
 <template>
-    <SectionPart title="Candidature pour les Jeux Olympiques d'hiver 2030">
+    <SectionPart title="Présentation">
         <template #default>
             <div class="introduction-content">
                 <div class="intro-hero">
-                    <div class="profile-section">
-                        <div class="profile-image">
-                            <div class="olympic-rings"></div>
+                    <div class="hero-main">
+                        <div class="profile-content">
+                            <div class="profile-image-section">
+                                <img src="/pg-sport.jpg" alt="Pierre GAMEN" class="main-photo" />
+                                <div class="olympic-badge">
+                                    <div class="olympic-rings-mini"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h2 class="profile-name">Pierre GAMEN</h2>
+                                <p class="profile-subtitle">Manager • Développeur • Sportif</p>
+                            </div>
                         </div>
                     </div>
 
@@ -62,12 +71,84 @@ import SectionPart from '../sectionPart.vue';
     padding: var(--spacing-xl) 0;
 }
 
-.profile-section {
+.hero-main {
+    margin-bottom: var(--spacing-xl);
+}
+
+.profile-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-image-section {
+    position: relative;
+    display: inline-block;
+}
+
+.main-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba($primary-color, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.olympic-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba($primary-color, 0.3);
+}
+
+.olympic-rings-mini {
+    width: 30px;
+    height: 18px;
+    background:
+        radial-gradient(circle at 4px 9px, transparent 2px, rgba(0, 133, 195, 0.9) 2px, rgba(0, 133, 195, 0.9) 3px, transparent 3px),
+        radial-gradient(circle at 10px 9px, transparent 2px, rgba(51, 51, 51, 0.9) 2px, rgba(51, 51, 51, 0.9) 3px, transparent 3px),
+        radial-gradient(circle at 16px 9px, transparent 2px, rgba(238, 51, 78, 0.9) 2px, rgba(238, 51, 78, 0.9) 3px, transparent 3px),
+        radial-gradient(circle at 22px 9px, transparent 2px, rgba(255, 209, 0, 0.9) 2px, rgba(255, 209, 0, 0.9) 3px, transparent 3px),
+        radial-gradient(circle at 28px 9px, transparent 2px, rgba(0, 166, 81, 0.9) 2px, rgba(0, 166, 81, 0.9) 3px, transparent 3px);
+}
+
+.profile-info {
+    text-align: center;
+
+    .profile-name {
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        font-weight: 700;
+        color: var(--text-primary);
+        margin: 0 0 var(--spacing-sm) 0;
+        line-height: 1.2;
+    }
+
+    .profile-subtitle {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        color: $primary-color;
+        font-weight: 500;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 }
 
 .profile-image {
@@ -235,7 +316,7 @@ import SectionPart from '../sectionPart.vue';
     }
 }
 
-.profile-section {
+.profile-content {
     animation: fadeInUp 0.6s ease-out;
 }
 
@@ -263,6 +344,29 @@ import SectionPart from '../sectionPart.vue';
 
 // Responsive Design
 @media (max-width: 768px) {
+    .main-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .olympic-badge {
+        width: 40px;
+        height: 40px;
+        bottom: 8px;
+        right: 8px;
+    }
+
+    .olympic-rings-mini {
+        width: 24px;
+        height: 14px;
+        background:
+            radial-gradient(circle at 3px 7px, transparent 1.5px, rgba(0, 133, 195, 0.9) 1.5px, rgba(0, 133, 195, 0.9) 2.5px, transparent 2.5px),
+            radial-gradient(circle at 8px 7px, transparent 1.5px, rgba(51, 51, 51, 0.9) 1.5px, rgba(51, 51, 51, 0.9) 2.5px, transparent 2.5px),
+            radial-gradient(circle at 13px 7px, transparent 1.5px, rgba(238, 51, 78, 0.9) 1.5px, rgba(238, 51, 78, 0.9) 2.5px, transparent 2.5px),
+            radial-gradient(circle at 18px 7px, transparent 1.5px, rgba(255, 209, 0, 0.9) 1.5px, rgba(255, 209, 0, 0.9) 2.5px, transparent 2.5px),
+            radial-gradient(circle at 23px 7px, transparent 1.5px, rgba(0, 166, 81, 0.9) 1.5px, rgba(0, 166, 81, 0.9) 2.5px, transparent 2.5px);
+    }
+
     .key-points {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
@@ -288,6 +392,34 @@ import SectionPart from '../sectionPart.vue';
 }
 
 @media (max-width: 480px) {
+    .main-photo {
+        width: 140px;
+        height: 140px;
+        border-width: 3px;
+    }
+
+    .olympic-badge {
+        width: 35px;
+        height: 35px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .olympic-rings-mini {
+        width: 20px;
+        height: 12px;
+        background:
+            radial-gradient(circle at 2.5px 6px, transparent 1px, rgba(0, 133, 195, 0.9) 1px, rgba(0, 133, 195, 0.9) 2px, transparent 2px),
+            radial-gradient(circle at 6.5px 6px, transparent 1px, rgba(51, 51, 51, 0.9) 1px, rgba(51, 51, 51, 0.9) 2px, transparent 2px),
+            radial-gradient(circle at 10.5px 6px, transparent 1px, rgba(238, 51, 78, 0.9) 1px, rgba(238, 51, 78, 0.9) 2px, transparent 2px),
+            radial-gradient(circle at 14.5px 6px, transparent 1px, rgba(255, 209, 0, 0.9) 1px, rgba(255, 209, 0, 0.9) 2px, transparent 2px),
+            radial-gradient(circle at 18.5px 6px, transparent 1px, rgba(0, 166, 81, 0.9) 1px, rgba(0, 166, 81, 0.9) 2px, transparent 2px);
+    }
+
+    .profile-content {
+        gap: var(--spacing-md);
+    }
+
     .point {
         padding: var(--spacing-md);
     }

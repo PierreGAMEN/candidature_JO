@@ -9,12 +9,10 @@
                 </div>
 
                 <!-- Divider gauche (caché en mobile) -->
-                <div class="divider divider-left"></div>
-
-                <!-- Contenu central -->
+                <div class="divider divider-left"></div> <!-- Contenu central -->
                 <div class="hero-text">
-                    <h1 class="hero-title">PIERRE GAMEN</h1>
-                    <p class="hero-subtitle">Futur acteur des Jeux Olympiques et Paralympiques d'hiver</p>
+                    <h1 class="hero-title">JEUX OLYMPIQUES D'HIVER 2030</h1>
+                    <p class="hero-subtitle">Alpes françaises</p>
                 </div>
 
                 <!-- Divider droit (caché en mobile) -->
@@ -153,16 +151,17 @@
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 2rem);
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
     font-weight: 800;
     margin: 0 0 1rem 0;
     letter-spacing: -0.02em;
-    line-height: 0.9;
+    line-height: 1.1;
     background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     word-break: break-word;
+    text-align: center;
 }
 
 .hero-subtitle {
