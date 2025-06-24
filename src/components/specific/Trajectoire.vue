@@ -43,11 +43,38 @@ import SectionPart from '../sectionPart.vue';
 
         <div class="motivation">
           <h3>Pourquoi moi, maintenant ?</h3>
-          <p>
-            Les Jeux 2030 sont un défi à la croisée de l’humain, du numérique et de l’environnement. J’y vois l’occasion
-            d’apporter ma double compétence, ma connaissance du territoire, et mon énergie collective pour construire,
-            ensemble, un événement exemplaire et porteur de sens.
+          <p class="motivation-intro">
+            Les Jeux 2030 sont un <strong>défi unique</strong> : ils rassemblent territoire, transition écologique,
+            excellence opérationnelle et engagement collectif.
           </p>
+
+          <div class="motivation-points">
+            <div class="motivation-point">
+              <div class="point-icon">🏔️</div>
+              <h4>Ancrage territorial</h4>
+              <p>Une <strong>connaissance des Alpes</strong>, terrain de vie, de sport et d'engagement depuis
+                toujours.</p>
+            </div>
+
+            <div class="motivation-point">
+              <div class="point-icon">🚀</div>
+              <h4>Double expertise</h4>
+              <p>Une <em>vision transversale</em> alliant <strong>coordination d'équipes</strong> et <strong>solutions
+                  numériques</strong>.</p>
+            </div>
+
+            <div class="motivation-point">
+              <div class="point-icon">🎯</div>
+              <h4>Valeurs alignées</h4>
+              <p>Une philosophie en phase avec l'esprit olympique : <strong>exigence</strong>, <em>sobriété</em> et
+                <strong>coopération</strong>.</p>
+            </div>
+          </div>
+
+          <blockquote class="motivation-conclusion">
+              J'ai la <strong>volonté</strong> et les <strong>compétences</strong>
+              pour aider à construire, ici, des Jeux durables et exemplaires.
+          </blockquote>
         </div>
       </div>
     </template>
@@ -239,6 +266,97 @@ import SectionPart from '../sectionPart.vue';
     position: relative;
     z-index: 1;
   }
+
+  .motivation-intro {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  }
+
+  .motivation-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+  }
+
+  .motivation-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .point-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: rgba($primary-color, 0.1);
+      border-radius: 50%;
+      border: 2px solid rgba($primary-color, 0.2);
+    }
+
+    h4 {
+      font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 1rem 0;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      line-height: 1.6;
+      margin: 0;
+      max-width: none;
+    }
+  }
+
+  .motivation-conclusion {
+    background: linear-gradient(135deg, rgba($primary-color, 0.05) 0%, rgba($primary-color, 0.1) 100%);
+    border: none;
+    border-left: 4px solid $primary-color;
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) auto 0;
+    max-width: 700px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 4rem;
+      font-family: serif;
+      color: rgba($primary-color, 0.3);
+      font-weight: bold;
+    }
+
+    p {
+      font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+      line-height: 1.6;
+      margin: 0 0 var(--spacing-md) 0;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
 
 // Animations
@@ -285,6 +403,40 @@ import SectionPart from '../sectionPart.vue';
 .motivation {
   animation: fadeInLeft 0.6s ease-out 0.5s;
   animation-fill-mode: both;
+
+  .motivation-point {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+
+    &:nth-child(1) {
+      animation-delay: 0.7s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.9s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 1.1s;
+    }
+  }
+
+  .motivation-conclusion {
+    animation: fadeInUp 0.6s ease-out 1.3s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // Responsive Design
@@ -313,6 +465,30 @@ import SectionPart from '../sectionPart.vue';
 
   .motivation {
     text-align: left;
+
+    .motivation-points {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+
+    .motivation-point {
+      .point-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+
+    .motivation-conclusion {
+      margin-left: var(--spacing-md);
+      margin-right: var(--spacing-md);
+
+      &::before {
+        font-size: 3rem;
+        top: -5px;
+        left: 15px;
+      }
+    }
   }
 }
 
