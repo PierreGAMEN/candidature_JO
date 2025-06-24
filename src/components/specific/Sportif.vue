@@ -39,7 +39,7 @@ import SectionPart from '../sectionPart.vue';
                             <h3>Sports olympiques d’hiver</h3>
                             <p>
                                 J’ai grandi avec les disciplines phares des <em>Jeux Olympiques d’hiver</em>.
-                                Le <strong>ski alpin</strong> fait partie de mon quotidien depuis l’âge de 4 ans, et
+                                Le <strong>ski alpin</strong> fait partie de mon quotidien depuis l’âge de 5 ans, et
                                 j’ai pratiqué le <strong>ski de fond</strong> en club dès mes 10 ans, avec une
                                 expérience en compétition.
                                 Cette proximité avec les sports d’hiver m’a permis de développer une compréhension fine
