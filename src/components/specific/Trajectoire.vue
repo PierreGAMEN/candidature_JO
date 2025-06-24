@@ -67,13 +67,14 @@ import SectionPart from '../sectionPart.vue';
               <div class="point-icon">🎯</div>
               <h4>Valeurs alignées</h4>
               <p>Une philosophie en phase avec l'esprit olympique : <strong>exigence</strong>, <em>sobriété</em> et
-                <strong>coopération</strong>.</p>
+                <strong>coopération</strong>.
+              </p>
             </div>
           </div>
 
           <blockquote class="motivation-conclusion">
-              J'ai la <strong>volonté</strong> et les <strong>compétences</strong>
-              pour aider à construire, ici, des Jeux durables et exemplaires.
+            J'ai la <strong>volonté</strong> et les <strong>compétences</strong>
+            pour aider à construire, ici, des Jeux durables et exemplaires.
           </blockquote>
         </div>
       </div>
@@ -275,7 +276,7 @@ import SectionPart from '../sectionPart.vue';
 
   .motivation-points {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     margin: var(--spacing-xl) 0;
   }
@@ -440,6 +441,33 @@ import SectionPart from '../sectionPart.vue';
 }
 
 // Responsive Design
+@media (max-width: 1024px) {
+  .motivation {
+    .motivation-points {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing-lg);
+    }
+
+    .motivation-point {
+      padding: var(--spacing-lg) var(--spacing-md);
+
+      .point-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 2.3rem;
+      }
+
+      h4 {
+        font-size: clamp(1.25rem, 2.5vw, 1.45rem);
+      }
+
+      p {
+        font-size: clamp(1rem, 2.2vw, 1.15rem);
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .timeline {
     &::before {
@@ -464,29 +492,48 @@ import SectionPart from '../sectionPart.vue';
   }
 
   .motivation {
-    text-align: left;
+    padding: var(--spacing-lg);
 
     .motivation-points {
       grid-template-columns: 1fr;
-      gap: var(--spacing-md);
+      gap: var(--spacing-lg);
+      margin: var(--spacing-lg) 0;
     }
 
     .motivation-point {
+      padding: var(--spacing-xl) var(--spacing-lg);
+      max-width: none;
+
       .point-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 2rem;
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+        margin-bottom: var(--spacing-lg);
+      }
+
+      h4 {
+        font-size: clamp(1.3rem, 3vw, 1.5rem);
+        margin-bottom: var(--spacing-md);
+      }
+
+      p {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        line-height: 1.7;
       }
     }
 
     .motivation-conclusion {
-      margin-left: var(--spacing-md);
-      margin-right: var(--spacing-md);
+      margin: var(--spacing-xl) var(--spacing-md) 0;
+      padding: var(--spacing-xl);
 
       &::before {
         font-size: 3rem;
         top: -5px;
         left: 15px;
+      }
+
+      p {
+        font-size: clamp(1.2rem, 3vw, 1.4rem);
       }
     }
   }
@@ -506,6 +553,44 @@ import SectionPart from '../sectionPart.vue';
         width: 16px;
         height: 16px;
         border-width: 3px;
+      }
+    }
+  }
+
+  .motivation {
+    padding: var(--spacing-md);
+
+    .motivation-points {
+      margin: var(--spacing-md) 0;
+    }
+
+    .motivation-point {
+      padding: var(--spacing-lg) var(--spacing-md);
+
+      .point-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+      }
+
+      h4 {
+        font-size: clamp(1.2rem, 4vw, 1.4rem);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      p {
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
+        line-height: 1.6;
+      }
+    }
+
+    .motivation-conclusion {
+      margin: var(--spacing-lg) var(--spacing-sm) 0;
+      padding: var(--spacing-lg) var(--spacing-md);
+
+      p {
+        font-size: clamp(1.1rem, 3.5vw, 1.3rem);
       }
     }
   }

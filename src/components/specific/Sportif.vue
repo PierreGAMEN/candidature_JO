@@ -15,7 +15,7 @@ import SectionPart from '../sectionPart.vue';
 
                 <div class="parcours-section">
                     <!-- Compétition de haut niveau -->
-                    <div class="parcours-item highlight">
+                    <div class="parcours-item">
                         <div class="sport-icon">🏆</div>
                         <div class="content">
                             <h3>Compétition</h3>
@@ -33,7 +33,7 @@ import SectionPart from '../sectionPart.vue';
                     </div>
 
                     <!-- Sports olympiques -->
-                    <div class="parcours-item highlight">
+                    <div class="parcours-item">
                         <div class="sport-icon">⛷️</div>
                         <div class="content">
                             <h3>Sports olympiques d’hiver</h3>
@@ -50,7 +50,7 @@ import SectionPart from '../sectionPart.vue';
                     </div>
 
                     <!-- Formation technique -->
-                    <div class="parcours-item highlight">
+                    <div class="parcours-item">
                         <div class="sport-icon">🎓</div>
                         <div class="content">
                             <h3>Formation technique</h3>
@@ -58,7 +58,7 @@ import SectionPart from '../sectionPart.vue';
                                 J’ai suivi un cursus unique au lycée de Moûtiers, en <strong>section montagne</strong>
                                 pendant 4 ans. Cette formation m’a permis d’acquérir les bases techniques et la culture
                                 de la montagne à travers l’alpinisme, le ski de
-                                    randonnée, l’orientation et l’escalade.
+                                randonnée, l’orientation et l’escalade.
                             </p>
                             <p>
                                 J’ai également validé une <strong>formation d’accompagnateur en moyenne
@@ -67,7 +67,7 @@ import SectionPart from '../sectionPart.vue';
                             </p>
                         </div>
                     </div> <!-- Pratique assidue -->
-                    <div class="parcours-item highlight">
+                    <div class="parcours-item">
                         <div class="sport-icon">🧗</div>
                         <div class="content">
                             <h3>Le sport au quotidien</h3>
@@ -85,7 +85,7 @@ import SectionPart from '../sectionPart.vue';
                     </div>
 
                     <!-- Esprit olympique -->
-                    <div class="parcours-item highlight">
+                    <div class="parcours-item">
                         <div class="sport-icon">🤝</div>
                         <div class="content">
                             <h3>De spectateur à bâtisseur</h3>
@@ -160,7 +160,7 @@ import SectionPart from '../sectionPart.vue';
     em {
         color: $primary-color;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         position: relative;
 
         &::after {
@@ -194,13 +194,13 @@ import SectionPart from '../sectionPart.vue';
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: var(--spacing-md);
-    padding: var(--spacing-lg);
-    background: rgba(255, 255, 255, 0.98);
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: var(--border-radius-lg);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    transition: var(--transition);
-    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
 
@@ -209,47 +209,20 @@ import SectionPart from '../sectionPart.vue';
         position: absolute;
         top: 0;
         left: 0;
-        width: 4px;
-        height: 100%;
-        background: linear-gradient(180deg, $primary-color, lighten($primary-color, 15%));
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 20%));
         transition: var(--transition);
     }
 
-    // Mise en valeur des éléments prioritaires
-    &.highlight {
-        background: linear-gradient(135deg, rgba($primary-color, 0.03), rgba(255, 255, 255, 0.98));
-        border: 2px solid rgba($primary-color, 0.15);
-
-        &::before {
-            width: 6px;
-            background: linear-gradient(180deg, $primary-color, darken($primary-color, 10%));
-        }
-
-        .sport-icon {
-            background: linear-gradient(135deg, rgba($primary-color, 0.1), rgba($primary-color, 0.05));
-            border: 2px solid rgba($primary-color, 0.2);
-            transform: scale(1.05);
-        }
-
-        .content h3 {
-            color: $primary-color;
-        }
-    }
-
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--shadow-lg);
-
-        &.highlight {
-            transform: translateY(-6px) scale(1.02);
-        }
-
-        &::before {
-            width: 6px;
-        }
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-color: rgba($primary-color, 0.2);
 
         .sport-icon {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba($primary-color, 0.15), rgba($primary-color, 0.08));
         }
     }
 
@@ -265,17 +238,18 @@ import SectionPart from '../sectionPart.vue';
 }
 
 .sport-icon {
-    width: clamp(50px, 6vw, 60px);
-    height: clamp(50px, 6vw, 60px);
+    width: clamp(60px, 6vw, 70px);
+    height: clamp(60px, 6vw, 70px);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border: 2px solid rgba($primary-color, 0.1);
-    transition: var(--transition);
+    font-size: clamp(1.8rem, 2.5vw, 2rem);
+    background: linear-gradient(135deg, rgba($primary-color, 0.1), rgba($primary-color, 0.05));
+    border: 2px solid rgba($primary-color, 0.15);
+    transition: all 0.3s ease;
     flex-shrink: 0;
+    margin-bottom: var(--spacing-sm);
 }
 
 .content {
@@ -283,25 +257,48 @@ import SectionPart from '../sectionPart.vue';
     width: 100%;
 
     h3 {
-        font-size: clamp(1.1rem, 2.2vw, 1.3rem);
-        font-weight: 600;
-        margin: 0 0 var(--spacing-sm) 0;
+        font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+        font-weight: 500;
+        margin: 0 0 var(--spacing-md) 0;
         color: var(--text-primary);
         line-height: 1.3;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 2px;
+            background: $primary-color;
+            border-radius: 1px;
+        }
     }
 
     p {
-        font-size: clamp(0.9rem, 1.8vw, 1rem);
+        font-size: clamp(0.95rem, 1.8vw, 1.05rem);
         line-height: 1.7;
         color: var(--text-secondary);
         margin: 0;
         text-align: left;
         max-width: 100%;
+        padding: var(--spacing-md) 0 0;
+
+        strong {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
 
         em {
             color: $primary-color;
             font-style: normal;
             font-weight: 500;
+        }
+
+        &+p {
+            margin-top: var(--spacing-sm);
         }
     }
 }
@@ -383,29 +380,19 @@ import SectionPart from '../sectionPart.vue';
 // Responsive Design
 @media (max-width: 768px) {
     .parcours-item {
-        padding: var(--spacing-md);
-
-        &.highlight {
-            transform: scale(1.01);
-        }
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
 
         &:hover {
-            transform: translateY(-2px) scale(1.01);
-
-            &.highlight {
-                transform: translateY(-3px) scale(1.01);
-            }
-        }
-
-        &::after {
-            top: 5px;
-            right: 10px;
-            font-size: 1rem;
+            transform: translateY(-1px);
         }
     }
 
     .sport-icon {
         margin-bottom: var(--spacing-xs);
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
     }
 
     .intro-quote {
@@ -438,14 +425,25 @@ import SectionPart from '../sectionPart.vue';
 
 @media (max-width: 480px) {
     .parcours-item {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
         gap: var(--spacing-sm);
     }
 
     .sport-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.3rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .content {
+        h3 {
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+        }
+
+        p {
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            padding-top: var(--spacing-sm);
+        }
     }
 }
 </style>
