@@ -25,30 +25,29 @@ import SectionPart from '../sectionPart.vue';
                     <div class="elevator-pitch">
                         <blockquote class="pitch-quote">
                             « <strong>Manager</strong>, <strong>développeur web</strong>
-                            et <em>sportif de montagne</em>.
-                            Originaire des Alpes, je souhaite mettre mon expérience
-                            au service d'un projet qui rassemble <strong>performance</strong>,
-                            <strong>innovation</strong> et <strong>territoire</strong>. »
+                            et <em>sportif orienté montagne</em>.
+                            Je souhaite mettre mon expérience au service des
+                            <strong>JO 2030</strong> dans les Alpes françaises. »
                         </blockquote>
                     </div>
 
                     <div class="key-points">
                         <div class="point">
                             <div class="point-icon">🏔️</div>
-                            <h3>Ancrage territorial</h3>
-                            <p>Né et élevé dans les Alpes, pratique de la montagne depuis l'enfance</p>
+                            <h3>Ancrage alpin</h3>
+                            <p>Né dans les Alpes, pratique de la montagne depuis l'enfance</p>
                         </div>
 
                         <div class="point">
                             <div class="point-icon">💼</div>
-                            <h3>Double expérience</h3>
-                            <p>8 ans de management + développement web et solutions numériques</p>
+                            <h3>Double expertise</h3>
+                            <p>Management d'équipes + développement de solutions numériques</p>
                         </div>
 
                         <div class="point">
                             <div class="point-icon">🏆</div>
-                            <h3>Pratique sportive</h3>
-                            <p>Expérience en compétition et partage des valeurs olympiques</p>
+                            <h3>Légitimité sportive</h3>
+                            <p>Pratique de plusieurs sports présents aux JO d'hiver</p>
                         </div>
                     </div>
                 </div>

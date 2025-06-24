@@ -8,10 +8,9 @@ import SectionPart from '../sectionPart.vue';
             <div class="professionnel-content">
                 <div class="intro-section">
                     <p class="intro-text">
-                        Mon parcours professionnel m'a permis de développer une <strong>double expertise</strong> :
-                        le management d'équipes et le développement de solutions numériques.
-                        Une combinaison qui m'aide à allier <em>vision d'ensemble</em> et <em>mise en œuvre
-                            technique</em>.
+                        Mon parcours professionnel combine <strong>management d'équipes</strong> et
+                        <strong>développement numérique</strong> : une approche qui allie vision d'ensemble
+                        et mise en œuvre technique.
                     </p>
                 </div>
 
@@ -20,19 +19,16 @@ import SectionPart from '../sectionPart.vue';
                         <div class="exp-icon">🏢</div>
                         <div class="exp-content">
                             <h3>8 ans chez Decathlon</h3>
-                            <div class="exp-subtitle">Manager d'équipe & Pilote opérationnel</div>
+                            <div class="exp-subtitle">Manager & Pilote opérationnel</div>
                             <p>
                                 Responsable d'équipes de 15 à 20 personnes, j'ai développé des compétences en
-                                <strong>coordination de projets</strong>, <strong>formation d'équipes</strong> et
-                                <strong>amélioration continue</strong>. J'ai eu l'opportunité de piloter des
-                                transformations opérationnelles
-                                et d'accompagner le changement dans un environnement exigeant.
+                                <strong>coordination de projets</strong> et <strong>amélioration continue</strong>.
+                                Pilotage de transformations opérationnelles dans un environnement exigeant.
                             </p>
                             <ul class="skills-list">
                                 <li>Management d'équipes pluridisciplinaires</li>
                                 <li>Pilotage de projets transversaux</li>
                                 <li>Formation et développement des talents</li>
-                                <li>Amélioration des processus métier</li>
                             </ul>
                         </div>
                     </div>
@@ -41,17 +37,16 @@ import SectionPart from '../sectionPart.vue';
                         <div class="exp-icon">💻</div>
                         <div class="exp-content">
                             <h3>Développeur Web</h3>
-                            <div class="exp-subtitle">Solutions numériques & Innovation</div>
+                            <div class="exp-subtitle">Solutions numériques modernes</div>
                             <p>
                                 Je conçois et développe des <strong>solutions web</strong>
-                                modernes. Mon approche cherche à privilégier l'<em>expérience utilisateur</em>,
-                                la <strong>performance</strong> et la <strong>maintenabilité</strong> des applications.
+                                modernes en privilégiant l'<em>expérience utilisateur</em> et
+                                la <strong>performance</strong>.
                             </p>
                             <ul class="skills-list">
                                 <li>Développement Frontend (Vue.js, React, TypeScript)</li>
                                 <li>Conception UX/UI centrée utilisateur</li>
                                 <li>Architecture et optimisation web</li>
-                                <li>Approche DevOps et bonnes pratiques</li>
                             </ul>
                         </div>
                     </div>
@@ -63,34 +58,33 @@ import SectionPart from '../sectionPart.vue';
                         <div class="competence-card">
                             <div class="comp-icon">🎯</div>
                             <h4>Leadership</h4>
-                            <p>Animation d'équipes, participation aux décisions, contribution à la vision</p>
+                            <p>Animation d'équipes et vision stratégique</p>
                         </div>
 
                         <div class="competence-card">
                             <div class="comp-icon">🔧</div>
                             <h4>Résolution de problèmes</h4>
-                            <p>Analyse, recherche de solutions, amélioration des processus</p>
+                            <p>Analyse et amélioration des processus</p>
                         </div>
 
                         <div class="competence-card">
                             <div class="comp-icon">🤝</div>
                             <h4>Communication</h4>
-                            <p>Collaboration, échange, partage des savoirs</p>
+                            <p>Collaboration et partage des savoirs</p>
                         </div>
 
                         <div class="competence-card">
                             <div class="comp-icon">⚡</div>
                             <h4>Adaptabilité</h4>
-                            <p>Agilité, apprentissage, accompagnement du changement</p>
+                            <p>Agilité et accompagnement du changement</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="value-proposition">
                     <blockquote class="value-quote">
-                        Cette <strong>double casquette</strong> me donne une approche particulière :
-                        comprendre les enjeux humains ET maîtriser les outils techniques pour
-                        <em>contribuer à transformer les idées en réalité</em>.
+                        Cette <strong>double expérience</strong> me permet d'appréhender un projet comme les JO
+                        sous différents angles : comprendre les enjeux humains ET maîtriser les outils techniques.
                     </blockquote>
                 </div>
             </div>

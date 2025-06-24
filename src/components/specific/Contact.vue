@@ -10,47 +10,59 @@ const contactData = {
 </script>
 
 <template>
-    <SectionPart title="Prêt à construire l’avenir des Jeux 2030, ensemble">
+    <SectionPart title="Ce que je recherche">
         <template #default>
             <div class="contact-content">
-                <div class="intro-text">
-                    <!-- <p class="main-message">
-                        Je suis convaincu que la réussite passera par des <strong>femmes et des hommes engagés, fiables
-                            et</strong>
-                        agiles.
-                        Si vous cherchez un collaborateur qui conjugue expérience, valeurs et esprit d’équipe : je suis là.
-                        Ancré dans mes montagnes, tourné vers l’avenir.
-                        Prêt à contribuer pleinement à cette aventure.
-                    </p> -->
-                    <br />
-                    <p class="search-statement">
-                        C’est dans des missions mêlant coordination, vision et impact collectif que je serai le plus
-                        utile. Mon expérience en encadrement, en gestion de projet, ainsi que mes compétences digitales
-                        font de moi un atout pour piloter des équipes et accompagner des dynamiques ambitieuses.
-                    </p>
-                </div>
-
-                <div class="call-to-action">
-                    <div class="action-section">
-                        <h4 class="action-title">👥 Contactez-moi. Échangeons. Construisons.</h4>
-
-                        <div class="contact-buttons">
-                            <a :href="`mailto:${contactData.email}`" class="btn-primary btn-email">
-                                <span class="btn-icon">📧</span>
-                                <span class="btn-text">{{ contactData.email }}</span>
-                            </a>
-                            <a :href="`tel:${contactData.phone}`" class="btn-primary btn-phone">
-                                <span class="btn-icon">📞</span>
-                                <span class="btn-text">{{ contactData.phoneDisplay }}</span>
-                            </a>
+                <div class="missions-section">
+                    <h3>Missions recherchées</h3>
+                    <div class="missions-grid">
+                        <div class="mission-item">
+                            <span class="mission-icon">🎯</span>
+                            <span>Coordination de projets olympiques</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">👥</span>
+                            <span>Management d'équipes opérationnelles</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">💻</span>
+                            <span>Développement de solutions digitales</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">🏔️</span>
+                            <span>Interface avec les partenaires locaux</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">📋</span>
+                            <span>Pilotage de la logistique événementielle</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">🔧</span>
+                            <span>Amélioration continue des processus</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">🌐</span>
+                            <span>Développement d'outils numériques JO</span>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">🤝</span>
+                            <span>Liaison avec les collectivités alpines</span>
                         </div>
                     </div>
                 </div>
-                <div class="engagement">
-                    <blockquote class="blockquote-accent">
-                        Ensemble, transformons les défis olympiques en opportunités durables pour notre territoire
-                        et notre avenir.
-                    </blockquote>
+
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <div class="contact-buttons">
+                        <a :href="`mailto:${contactData.email}`" class="btn-primary btn-email">
+                            <span class="btn-icon">📧</span>
+                            <span class="btn-text">{{ contactData.email }}</span>
+                        </a>
+                        <a :href="`tel:${contactData.phone}`" class="btn-primary btn-phone">
+                            <span class="btn-icon">📞</span>
+                            <span class="btn-text">{{ contactData.phoneDisplay }}</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </template>
@@ -65,54 +77,14 @@ const contactData = {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
+    max-width: 800px;
 }
 
-.engagement {
-    margin-top: var(--spacing-lg);
-}
-
-.intro-text {
+.missions-section,
+.contact-section {
     text-align: center;
 
-    .main-message {
-        font-size: clamp(1.1rem, 2.2vw, 1.3rem);
-        line-height: 1.8;
-        color: var(--text-primary);
-        margin: 0 0 var(--spacing-lg) 0;
-        font-weight: 400;
-        letter-spacing: 0.01em;
-    }
-
-    .search-statement {
-        font-size: clamp(1rem, 2vw, 1.15rem);
-        line-height: 1.7;
-        color: var(--text-muted);
-        margin: 0;
-        padding: var(--spacing-md);
-        background: linear-gradient(135deg,
-                rgba($primary-color, 0.06) 0%,
-                rgba($primary-color, 0.02) 100%);
-        border-radius: var(--border-radius);
-        border-left: 4px solid $primary-color;
-        position: relative;
-        font-weight: 500;
-        max-width: 750px;
-        margin: 0 auto;
-    }
-}
-
-.call-to-action {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xl);
-}
-
-.action-section {
-    text-align: center;
-    width: 100%;
-
-    .action-title {
+    h3 {
         font-size: clamp(1.3rem, 2.5vw, 1.6rem);
         font-weight: 600;
         color: var(--text-primary);
@@ -133,6 +105,44 @@ const contactData = {
     }
 }
 
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.mission-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    text-align: left;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-color: rgba($primary-color, 0.2);
+    }
+
+    .mission-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    span:last-child {
+        font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+        font-weight: 500;
+        color: var(--text-primary);
+        line-height: 1.4;
+    }
+}
+
 .contact-buttons {
     display: flex;
     flex-direction: row;
@@ -140,6 +150,7 @@ const contactData = {
     align-items: center;
     gap: var(--spacing-md);
     width: 100%;
+    margin-top: var(--spacing-lg);
 }
 
 .btn-primary {
@@ -213,24 +224,57 @@ const contactData = {
     }
 }
 
-.intro-text {
+.missions-section {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.action-section {
-    animation: fadeInUp 0.6s ease-out 0.1s;
-    animation-fill-mode: both;
-}
-
-.engagement {
+.contact-section {
     animation: fadeInUp 0.6s ease-out 0.2s;
     animation-fill-mode: both;
 }
 
+.mission-item {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+
+    &:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    &:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    &:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    &:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+
+    &:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+}
+
 // Responsive Design
 @media (max-width: 768px) {
-    .contact-content {
-        gap: var(--spacing-lg);
+    .missions-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
 
     .contact-buttons {
@@ -254,12 +298,6 @@ const contactData = {
         .btn-text {
             white-space: normal;
             text-align: center;
-        }
-    }
-
-    .action-section .action-title {
-        &::after {
-            width: 40px;
         }
     }
 }

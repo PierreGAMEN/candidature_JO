@@ -14,90 +14,61 @@ import SectionPart from '../sectionPart.vue';
                 </div>
 
                 <div class="parcours-section">
-                    <!-- Compétition de haut niveau -->
+                    <!-- Sports olympiques et compétition -->
                     <div class="parcours-item">
                         <div class="sport-icon">🏆</div>
                         <div class="content">
-                            <h3>Compétition</h3>
+                            <h3>Sports en compétition</h3>
                             <p>
-                                La montagne a toujours été mon terrain de jeu, mais c’est en <strong>trail
-                                    running</strong> que j’ai le plus exploré mes limites.
-                                Pendant six ans, j’ai couru en compétition, accompagné par un coach personnel.
-                                Le <strong>ski-alpinisme</strong> est venu en parallèle, avec des courses emblématiques
-                                comme la <em>Pierra Menta</em> ou la <em>TSF Millet</em>.
-                                J’ai aussi pratiqué le <strong>ski de fond</strong> en club durant plusieurs années.
+                                <strong>Ski alpin</strong> depuis l'âge de 5 ans et <strong>ski de fond</strong> en
+                                club. J'ai pratiqué le <strong>trail running</strong>, six ans en
+                                compétition avec l'accompagnement coach. J'ai également fait du
+                                <strong>ski-alpinisme</strong> en compétition avec des courses
+                                comme la
+                                <em>Pierra Menta</em>.
                             </p>
-
-
                         </div>
                     </div>
 
-                    <!-- Sports olympiques -->
-                    <div class="parcours-item">
-                        <div class="sport-icon">⛷️</div>
-                        <div class="content">
-                            <h3>Sports olympiques d’hiver</h3>
-                            <p>
-                                J’ai grandi avec les disciplines phares des <em>Jeux Olympiques d’hiver</em>.
-                                Le <strong>ski alpin</strong> fait partie de mon quotidien depuis l’âge de 5 ans, et
-                                j’ai pratiqué le <strong>ski de fond</strong> en club dès mes 10 ans, avec une
-                                expérience en compétition.
-                                Cette proximité avec les sports d’hiver m’a permis de développer une compréhension fine
-                                des exigences, des formats et des valeurs portées par ces disciplines.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <!-- Formation technique -->
+                    <!-- Formation montagne -->
                     <div class="parcours-item">
                         <div class="sport-icon">🎓</div>
                         <div class="content">
-                            <h3>Formation technique</h3>
+                            <h3>Formation montagne</h3>
                             <p>
-                                J’ai suivi un cursus unique au lycée de Moûtiers, en <strong>section montagne</strong>
-                                pendant 4 ans. Cette formation m’a permis d’acquérir les bases techniques et la culture
-                                de la montagne à travers l’alpinisme, le ski de
-                                randonnée, l’orientation et l’escalade.
-                            </p>
-                            <p>
-                                J’ai également validé une <strong>formation d’accompagnateur en moyenne
-                                    montagne</strong>, renforçant mes compétences en terrain, ma capacité à encadrer et
-                                ma connaissance fine de l’environnement alpin.
+                                <strong>Section montagne</strong> au lycée de Moûtiers (4 ans) : alpinisme, ski de
+                                randonnée,
+                                orientation, escalade.
+                                <br /> <br />
+                                Formation d'<strong>accompagnateur en moyenne montagne</strong>
                             </p>
                         </div>
-                    </div> <!-- Pratique assidue -->
+                    </div>
+
+                    <!-- Pratique actuelle -->
                     <div class="parcours-item">
                         <div class="sport-icon">🧗</div>
                         <div class="content">
                             <h3>Le sport au quotidien</h3>
                             <p>
-                                Le sport ne se résume pas à un souvenir ou à un palmarès — il <strong>structure encore
-                                    aujourd’hui mon quotidien.</strong> Escalade, ski, course en montagne : je pratique
-                                régulièrement, toute l’année, avec la même envie d’effort et de progression. Cet
-                                engagement constant nourrit mon équilibre, ma rigueur et mon énergie. Il m’ancre dans
-                                <strong>une culture de l’action</strong>, que je souhaite mettre au service d’un projet
-                                collectif comme
-                                les Jeux.
+                                Le sport <strong>structure encore aujourd'hui mon quotidien</strong> : escalade, ski,
+                                course en montagne.
+                                Cette pratique régulière nourrit ma rigueur et mon énergie pour un projet collectif
+                                comme les Jeux.
                             </p>
-
                         </div>
                     </div>
 
-                    <!-- Esprit olympique -->
+                    <!-- Vision olympique -->
                     <div class="parcours-item">
                         <div class="sport-icon">🤝</div>
                         <div class="content">
-                            <h3>De spectateur à bâtisseur</h3>
+                            <h3>De spectateur à organisateur</h3>
                             <p>
-                                J’ai <strong>grandi avec les compétitions sportives</strong> : les suivre faisait partie
-                                de mes saisons,
-                                comme un rendez-vous familier. Aujourd’hui, <strong>je veux passer de l’autre
-                                    côté</strong>. Contribuer à
-                                l’organisation des Jeux, c’est rendre à ce monde une part de ce qu’il m’a transmis —
-                                émotions, repères, exigence.
+                                J'ai <strong>grandi avec les compétitions sportives</strong>. Aujourd'hui,
+                                <strong>je veux passer de l'autre côté</strong> : contribuer à l'organisation des Jeux,
+                                c'est rendre à ce monde une part de ce qu'il m'a transmis.
                             </p>
-
                         </div>
                     </div>
                 </div>
@@ -105,8 +76,8 @@ import SectionPart from '../sectionPart.vue';
                 <div class="conclusion-section">
                     <blockquote class="conclusion-quote">
                         Ce parcours sportif m'a forgé les valeurs olympiques :
-                        <strong>excellence, respect, amitié</strong>. Une légitimité terrain pour porter
-                        les <em>Jeux Olympiques d'hiver 2030</em> dans les Alpes françaises.
+                        <strong>excellence, respect, amitié</strong>. Une légitimité terrain pour les
+                        <em>Jeux Olympiques d'hiver 2030</em>.
                     </blockquote>
                 </div>
             </div>

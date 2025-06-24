@@ -8,9 +8,8 @@ import SectionPart from '../sectionPart.vue';
             <div class="motivation-content">
                 <div class="intro-section">
                     <p class="intro-text">
-                        Les <strong>Jeux Olympiques d'hiver 2030</strong> dans les Alpes françaises représentent
-                        un défi unique qui nécessite une approche alliant <em>excellence opérationnelle</em>,
-                        <em>innovation durable</em> et <em>ancrage territorial</em>.
+                        Les <strong>JO d'hiver 2030</strong> dans les Alpes nécessitent
+                        <em>excellence opérationnelle</em>, <em>innovation</em> et <em>ancrage territorial</em>.
                         Mon profil peut contribuer à ces enjeux.
                     </p>
                 </div>
@@ -19,120 +18,47 @@ import SectionPart from '../sectionPart.vue';
                     <div class="argument-card featured">
                         <div class="arg-icon">🏔️</div>
                         <div class="arg-content">
-                            <h3>Connaissance territoriale</h3>
+                            <h3>Ancrage territorial</h3>
                             <p>
                                 <strong>Né et élevé dans les Alpes</strong>, je connais ce territoire,
-                                ses spécificités, ses défis et ses atouts. Cette connaissance du terrain peut être
-                                utile pour organiser des Jeux qui respectent et valorisent l'identité alpine.
+                                ses spécificités et ses atouts. Une connaissance du terrain essentielle
+                                pour organiser des Jeux qui respectent l'identité alpine.
                             </p>
-                            <ul class="argument-points">
-                                <li>Connaissance approfondie du territoire alpin</li>
-                                <li>Réseau local et compréhension des enjeux régionaux</li>
-                                <li>Expérience de la montagne en toutes saisons</li>
-                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="argument-card featured">
+                        <div class="arg-icon">🎯</div>
+                        <div class="arg-content">
+                            <h3>Double expertise</h3>
+                            <p>
+                                <strong>Management d'équipes</strong> (8 ans) et <strong>développement
+                                    numérique</strong> :
+                                une combinaison qui permet d'appréhender les JO sous l'angle humain ET technique.
+                            </p>
                         </div>
                     </div>
 
                     <div class="argument-card featured">
                         <div class="arg-icon">🏆</div>
                         <div class="arg-content">
-                            <h3>Expérience sportive</h3>
+                            <h3>Légitimité sportive</h3>
                             <p>
-                                Pratiquant de <strong>sports olympiques d'hiver</strong> depuis l'enfance et
-                                ayant eu une <strong>expérience en compétition</strong> pendant plusieurs années, je
-                                peux comprendre les enjeux
-                                des athlètes et partager l'esprit olympique.
+                                Pratique de <strong>sports olympiques d'hiver</strong> depuis l'enfance,
+                                expérience en compétition : je comprends les enjeux des athlètes
+                                et partage l'esprit olympique.
                             </p>
-                            <ul class="argument-points">
-                                <li>Pratique du ski alpin depuis mes 5 ans</li>
-                                <li>Expérience en compétition (ski de fond, trail, ski-alpinisme)</li>
-                                <li>Compréhension des besoins des athlètes</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="argument-card">
-                        <div class="arg-icon">💼</div>
-                        <div class="arg-content">
-                            <h3>Expertise opérationnelle</h3>
-                            <p>
-                                <strong>8 ans de management</strong> m'ont donné une solide expérience en
-                                coordination d'équipes, gestion de projets complexes et amélioration continue.
-                            </p>
-                            <ul class="argument-points">
-                                <li>Management d'équipes de 15 à 20 personnes</li>
-                                <li>Pilotage de projets transversaux</li>
-                                <li>Expertise en amélioration des processus</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="argument-card">
-                        <div class="arg-icon">💻</div>
-                        <div class="arg-content">
-                            <h3>Vision digitale</h3>
-                            <p>
-                                En tant que <strong>développeur web</strong>, j'apporte une expertise technique
-                                moderne, essentielle pour des Jeux innovants et connectés.
-                            </p>
-                            <ul class="argument-points">
-                                <li>Développement de solutions numériques</li>
-                                <li>Approche UX/UI centrée utilisateur</li>
-                                <li>Compréhension des enjeux technologiques actuels</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="argument-card">
-                        <div class="arg-icon">🌱</div>
-                        <div class="arg-content">
-                            <h3>Engagement durable</h3>
-                            <p>
-                                Passionné de montagne, je suis sensible aux <strong>enjeux environnementaux</strong>
-                                et à la nécessité d'organiser des Jeux exemplaires et responsables.
-                            </p>
-                            <ul class="argument-points">
-                                <li>Sensibilité écologique et respect de la montagne</li>
-                                <li>Approche durable dans mes projets</li>
-                                <li>Vision long terme pour le territoire</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="argument-card">
-                        <div class="arg-icon">🤝</div>
-                        <div class="arg-content">
-                            <h3>Esprit collaboratif</h3>
-                            <p>
-                                Mon expérience en <strong>magasin</strong> et ma pratique sportive
-                                m'ont appris l'importance de la collaboration et du dépassement collectif.
-                            </p>
-                            <ul class="argument-points">
-                                <li>Capacité à fédérer et motiver</li>
-                                <li>Expérience de la collaboration intersectorielle</li>
-                                <li>Esprit de cordée</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="synthese-section">
                     <div class="synthese-content">
-                        <h3>Une approche globale</h3>
                         <blockquote class="synthese-quote">
-                            Mon profil combine <strong>ancrage territorial</strong>, <strong>légitimité
-                                sportive</strong>,
-                            <strong>expertise managériale</strong> et <strong>vision technologique</strong>.
-                            Cette convergence me permet d'appréhender les Jeux Olympiques sous différents angles :
-                            <em>humain</em>, <em>technique</em>, <em>territorial</em> et <em>durable</em>.
+                            <strong>Ancrage alpin</strong>, <strong>expertise managériale et technique</strong>,
+                            <strong>légitimité sportive</strong> : une convergence au service des
+                            <em>Jeux Olympiques d'hiver 2030</em>.
                         </blockquote>
-
-                        <div class="call-to-action">
-                            <p class="cta-text">
-                                Prêt à mettre cette envie et ces expériences au service d'un projet qui marquera
-                                l'histoire du sport et du territoire alpin.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -276,34 +202,6 @@ import SectionPart from '../sectionPart.vue';
                 font-weight: 500;
                 color: var(--text-primary);
             }
-        }
-    }
-}
-
-.argument-points {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-        font-size: clamp(0.9rem, 1.6vw, 1rem);
-        color: var(--text-secondary);
-        padding: var(--spacing-xs) 0;
-        position: relative;
-        padding-left: 1.5rem;
-
-        &::before {
-            content: '▶';
-            color: $primary-color;
-            font-size: 0.8rem;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        &+li {
-            margin-top: var(--spacing-xs);
         }
     }
 }
@@ -548,18 +446,6 @@ import SectionPart from '../sectionPart.vue';
                 font-size: 0.95rem;
                 line-height: 1.6;
                 margin-bottom: var(--spacing-sm);
-            }
-        }
-    }
-
-    .argument-points {
-        li {
-            font-size: 0.9rem;
-            padding: var(--spacing-xs) 0;
-            padding-left: 1.2rem;
-
-            &::before {
-                font-size: 0.7rem;
             }
         }
     }
