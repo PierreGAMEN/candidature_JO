@@ -22,8 +22,7 @@ import SectionPart from '../sectionPart.vue';
                             <p>
                                 La montagne a toujours été mon terrain de jeu, mais c’est en <strong>trail
                                     running</strong> que j’ai le plus exploré mes limites.
-                                Pendant six ans, j’ai couru en compétition, accompagné par un coach personnel, sur des
-                                parcours techniques et engagés.
+                                Pendant six ans, j’ai couru en compétition, accompagné par un coach personnel.
                                 Le <strong>ski-alpinisme</strong> est venu en parallèle, avec des courses emblématiques
                                 comme la <em>Pierra Menta</em> ou la <em>TSF Millet</em>.
                                 J’ai aussi pratiqué le <strong>ski de fond</strong> en club durant plusieurs années.
