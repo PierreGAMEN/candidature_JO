@@ -197,12 +197,12 @@ import SectionPart from '../sectionPart.vue';
     }
 
     // Animation d'entrée séquentielle
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.3s ease-out;
     animation-fill-mode: both;
 
     @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
-            animation-delay: #{($i - 1) * 0.1}s;
+            animation-delay: #{($i - 1) * 0.05}s;
         }
     }
 }

@@ -226,40 +226,40 @@ import SectionPart from '../sectionPart.vue';
 }
 
 .recherche-intro {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.3s ease-out;
 }
 
 .mission-item {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.3s ease-out;
     animation-fill-mode: both;
 
     &:nth-child(1) {
-        animation-delay: 0.1s;
+        animation-delay: 0.05s;
     }
 
     &:nth-child(2) {
-        animation-delay: 0.2s;
+        animation-delay: 0.1s;
     }
 
     &:nth-child(3) {
-        animation-delay: 0.3s;
+        animation-delay: 0.15s;
     }
 
     &:nth-child(4) {
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
     }
 
     &:nth-child(5) {
-        animation-delay: 0.5s;
+        animation-delay: 0.25s;
     }
 
     &:nth-child(6) {
-        animation-delay: 0.6s;
+        animation-delay: 0.3s;
     }
 }
 
 .contact-section {
-    animation: fadeInUp 0.6s ease-out 0.7s;
+    animation: fadeInUp 0.3s ease-out 0.35s;
     animation-fill-mode: both;
 }
 

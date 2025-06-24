@@ -316,28 +316,28 @@ import SectionPart from '../sectionPart.vue';
 }
 
 .profile-content {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.3s ease-out;
 }
 
 .elevator-pitch {
-    animation: fadeInUp 0.6s ease-out 0.2s;
+    animation: fadeInUp 0.3s ease-out 0.1s;
     animation-fill-mode: both;
 }
 
 .point {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.3s ease-out;
     animation-fill-mode: both;
 
     &:nth-child(1) {
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
     }
 
     &:nth-child(2) {
-        animation-delay: 0.6s;
+        animation-delay: 0.3s;
     }
 
     &:nth-child(3) {
-        animation-delay: 0.8s;
+        animation-delay: 0.4s;
     }
 }
 
