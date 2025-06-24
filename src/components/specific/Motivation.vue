@@ -3,7 +3,7 @@ import SectionPart from '../sectionPart.vue';
 </script>
 
 <template>
-    <SectionPart title="Pourquoi moi pour accompagner les JO 2030">
+    <SectionPart title="Pourquoi moi pour accompagner les JO 2030 ?">
         <template #default>
             <div class="motivation-content">
                 <div class="intro-section">

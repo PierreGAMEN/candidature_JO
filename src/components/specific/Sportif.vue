@@ -2,7 +2,7 @@
 import SectionPart from '../sectionPart.vue';
 </script>
 <template>
-    <SectionPart title="Qui je suis en tant que sportif">
+    <SectionPart title="Qui suis-je sportivement ?">
         <template #default>
             <div class="sportif-content">
                 <div class="intro-section">

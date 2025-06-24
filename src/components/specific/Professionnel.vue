@@ -3,7 +3,7 @@ import SectionPart from '../sectionPart.vue';
 </script>
 
 <template>
-    <SectionPart title="Qui suis-je professionnellement">
+    <SectionPart title="Qui suis-je professionnellement ?">
         <template #default>
             <div class="professionnel-content">
                 <div class="intro-section">
