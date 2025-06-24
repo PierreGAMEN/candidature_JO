@@ -143,10 +143,16 @@ import SectionPart from '../sectionPart.vue';
 <style scoped lang="scss">
 @use '@/styles/variables' as *;
 
+* {
+    box-sizing: border-box;
+}
+
 .motivation-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .intro-section {
@@ -176,9 +182,11 @@ import SectionPart from '../sectionPart.vue';
 
 .arguments-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: var(--spacing-lg);
     margin: var(--spacing-xl) 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .argument-card {
@@ -455,14 +463,29 @@ import SectionPart from '../sectionPart.vue';
 }
 
 // Responsive Design
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .arguments-section {
+        grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+        gap: var(--spacing-md);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .motivation-content {
+        padding: 0 var(--spacing-xs);
+    }
+
     .arguments-section {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
+        margin: var(--spacing-lg) 0;
     }
 
     .argument-card {
         padding: var(--spacing-lg);
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
 
         .arg-icon {
             width: 60px;
@@ -473,16 +496,94 @@ import SectionPart from '../sectionPart.vue';
 
     .synthese-section {
         padding: var(--spacing-lg);
+        margin: var(--spacing-lg) 0;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+        padding: 0 var(--spacing-sm);
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .motivation-content {
+        padding: 0 var(--spacing-xs);
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .intro-section {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 var(--spacing-xs);
+    }
+
+    .arguments-section {
+        gap: var(--spacing-sm);
+        margin: var(--spacing-md) 0;
+    }
+
     .argument-card {
         padding: var(--spacing-md);
+        margin: 0 0 var(--spacing-sm) 0;
+
+        .arg-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .arg-content {
+            h3 {
+                font-size: 1.1rem;
+                margin-bottom: var(--spacing-sm);
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+    }
+
+    .argument-points {
+        li {
+            font-size: 0.9rem;
+            padding: var(--spacing-xs) 0;
+            padding-left: 1.2rem;
+
+            &::before {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .synthese-section {
+        padding: var(--spacing-md);
+        margin: var(--spacing-md) 0;
+
+        .synthese-content h3 {
+            font-size: 1.3rem;
+        }
     }
 
     .synthese-quote {
-        font-size: clamp(1rem, 4vw, 1.2rem);
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .call-to-action {
+        padding: var(--spacing-md);
+
+        .cta-text {
+            font-size: 0.95rem;
+        }
     }
 }
 </style>
