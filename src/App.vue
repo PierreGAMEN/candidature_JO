@@ -1,22 +1,18 @@
 <script setup lang="ts">
 import Header from './components/Header.vue';
-import Adventure from './components/specific/Adventure.vue';
-import Trajectoire from './components/specific/Trajectoire.vue';
-import Values from './components/specific/Values.vue';
-import Contact from './components/specific/Contact.vue';
+import Introduction from './components/specific/Introduction.vue';
+import Professionnel from './components/specific/Professionnel.vue';
 import Sportif from './components/specific/Sportif.vue';
-
-
+import Motivation from './components/specific/Motivation.vue';
+import Recherche from './components/specific/Recherche.vue';
 </script>
+
 <template>
-<Header></Header>
-<Adventure></Adventure>
-<Values></Values>
-<Sportif></Sportif>
-<Trajectoire></Trajectoire>
-<Contact></Contact>
-
+    <Header></Header>
+    <Introduction></Introduction>
+    <Professionnel></Professionnel>
+    <Sportif></Sportif>
+    <Motivation></Motivation>
+    <Recherche></Recherche>
 </template>
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

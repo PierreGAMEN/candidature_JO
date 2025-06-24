@@ -2,7 +2,7 @@
 import SectionPart from '../sectionPart.vue';
 </script>
 <template>
-    <SectionPart title="Un sportif engagé pour les Jeux 2030">
+    <SectionPart title="Qui je suis en tant que sportif">
         <template #default>
             <div class="sportif-content">
                 <div class="intro-section">
