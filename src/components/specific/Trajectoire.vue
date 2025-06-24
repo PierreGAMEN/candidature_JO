@@ -59,7 +59,7 @@ import SectionPart from '../sectionPart.vue';
 @use '@/styles/variables' as *;
 
 .trajectory-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
