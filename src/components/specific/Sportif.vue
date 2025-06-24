@@ -22,7 +22,7 @@ import SectionPart from '../sectionPart.vue';
                             <p>
                                 <strong>Ski alpin</strong> depuis l'âge de 5 ans et <strong>ski de fond</strong> en
                                 club. J'ai pratiqué le <strong>trail running</strong>, six ans en
-                                compétition avec l'accompagnement coach. J'ai également fait du
+                                compétition avec l'accompagnement d'un coach. J'ai également fait du
                                 <strong>ski-alpinisme</strong> en compétition avec des courses
                                 comme la
                                 <em>Pierra Menta</em>.
@@ -53,8 +53,7 @@ import SectionPart from '../sectionPart.vue';
                             <p>
                                 Le sport <strong>structure encore aujourd'hui mon quotidien</strong> : escalade, ski,
                                 course en montagne.
-                                Cette pratique régulière nourrit ma rigueur et mon énergie pour un projet collectif
-                                comme les Jeux.
+                                Cette pratique régulière nourrit ma rigueur et mon énergie.
                             </p>
                         </div>
                     </div>

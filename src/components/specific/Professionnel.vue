@@ -80,13 +80,6 @@ import SectionPart from '../sectionPart.vue';
                         </div>
                     </div>
                 </div>
-
-                <div class="value-proposition">
-                    <blockquote class="value-quote">
-                        Cette <strong>double expérience</strong> me permet d'appréhender un projet comme les JO
-                        sous différents angles : comprendre les enjeux humains ET maîtriser les outils techniques.
-                    </blockquote>
-                </div>
             </div>
         </template>
     </SectionPart>
