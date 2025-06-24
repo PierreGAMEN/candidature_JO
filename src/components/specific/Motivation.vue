@@ -3,50 +3,50 @@ import SectionPart from '../sectionPart.vue';
 </script>
 
 <template>
-    <SectionPart title="Pourquoi moi pour accompagner les JO 2030 ?">
+    <SectionPart title="Ma valeur ajoutée pour les JO 2030">
         <template #default>
             <div class="motivation-content">
                 <div class="intro-section">
                     <p class="intro-text">
-                        Les <strong>JO d'hiver 2030</strong> dans les Alpes nécessitent
-                        <em>excellence opérationnelle</em>, <em>innovation</em> et <em>ancrage territorial</em>.
-                        Mon profil peut contribuer à ces enjeux.
+                        Au-delà de mon parcours, voici comment je peux <strong>contribuer</strong>
+                        aux <em>JO d'hiver 2030</em> dans les Alpes.
                     </p>
                 </div>
 
                 <div class="arguments-section">
                     <div class="argument-card featured">
-                        <div class="arg-icon">🏔️</div>
-                        <div class="arg-content">
-                            <h3>Ancrage territorial</h3>
-                            <p>
-                                <strong>Né et élevé dans les Alpes</strong>, je connais ce territoire,
-                                ses spécificités et ses atouts. Une connaissance du terrain essentielle
-                                pour organiser des Jeux qui respectent l'identité alpine.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="argument-card featured">
                         <div class="arg-icon">🎯</div>
                         <div class="arg-content">
-                            <h3>Double expertise</h3>
+                            <h3>Compréhension transversale</h3>
                             <p>
-                                <strong>Management d'équipes</strong> (8 ans) et <strong>développement
-                                    numérique</strong> :
-                                une combinaison qui permet d'appréhender les JO sous l'angle humain ET technique.
+                                Mon expérience me permet de comprendre <strong>les contraintes techniques</strong>
+                                (développeur),
+                                <strong>les enjeux humains</strong> (manager) et <strong>les attentes des
+                                    athlètes</strong> (compétiteur).
                             </p>
                         </div>
                     </div>
 
                     <div class="argument-card featured">
-                        <div class="arg-icon">🏆</div>
+                        <div class="arg-icon">🏔️</div>
                         <div class="arg-content">
-                            <h3>Légitimité sportive</h3>
+                            <h3>Connaissance du territoire</h3>
                             <p>
-                                Pratique de <strong>sports olympiques d'hiver</strong> depuis l'enfance,
-                                expérience en compétition : je comprends les enjeux des athlètes
-                                et partage l'esprit olympique.
+                                <strong>Natif des Alpes</strong>, je peux faciliter les échanges
+                                entre l'organisation olympique et les communautés locales.
+                                Cette connaissance du terrain peut être utile pour les projets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="argument-card featured">
+                        <div class="arg-icon">⚡</div>
+                        <div class="arg-content">
+                            <h3>Expérience terrain</h3>
+                            <p>
+                                Mon parcours en management et développement, ainsi que ma
+                                connaissance du terrain, peuvent être <strong>directement mis à profit</strong>
+                                sans (ou presque) période d'adaptation.
                             </p>
                         </div>
                     </div>
@@ -55,9 +55,10 @@ import SectionPart from '../sectionPart.vue';
                 <div class="synthese-section">
                     <div class="synthese-content">
                         <blockquote class="synthese-quote">
-                            <strong>Ancrage alpin</strong>, <strong>expertise managériale et technique</strong>,
-                            <strong>légitimité sportive</strong> : une convergence au service des
-                            <em>Jeux Olympiques d'hiver 2030</em>.
+                            Mon parcours combine <strong>expérience technique</strong>,
+                            <strong>background managérial</strong>, <strong>ancrage territorial</strong>
+                            et <strong>pratique sportive</strong>. Une combinaison qui peut contribuer
+                            au succès des <em>JO 2030</em>.
                         </blockquote>
                     </div>
                 </div>
